@@ -530,7 +530,7 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
+/* .skills__html {
   width: 60%;
 }
 
@@ -552,7 +552,7 @@ img {
 
 .skills__python{
   width: 50%;
-}
+} */
 
 .skills__close .skills__list {
   
