@@ -416,6 +416,8 @@ img {
 /*==================== ABOUT ====================*/
 .about__img {
   width: 200px;
+  height: 400px;
+  object-fit: cover; /* 添加这一行，设置图片填充方式为覆盖 */
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
