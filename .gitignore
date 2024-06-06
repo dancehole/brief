@@ -4,6 +4,8 @@
 /node_modules
 *node_modules/*
 
+/refactor-vue/*
+
 # 日志文件
 logs
 
