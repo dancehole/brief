@@ -1,0 +1,12 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 定义蒙版 -->
+  <defs>
+      <mask id="mask-circle">
+          <rect x="0" y="0" width="100%" height="100%" fill="white"/> <!-- 白色部分表示透明 -->
+          <circle cx="150" cy="100" r="50" fill="black"/> <!-- 黑色部分表示不透明 -->
+      </mask>
+  </defs>
+
+  <!-- 使用蒙版的图像 -->
+  <image mask="url(#mask-circle)" width="300" height="200" href="https://cdn.jsdelivr.net/gh/dancehole/image@main/img/1080x1080.ico" />
+</svg>

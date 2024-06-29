@@ -1,0 +1,296 @@
+{
+  "title": "邓仕昊的简历",
+  "header": {
+    "navLeft": [
+      {
+        "name": "下载简历pdf",
+        "url": "./assets/pdf/resume.pdf"
+      }
+    ],
+    "navRight": [
+      {
+        "url": "#home",
+        "text": "首页"
+      },
+      {
+        "url": "#about",
+        "text": "关于我"
+      },
+      {
+        "url": "#skills",
+        "text": "我的技能"
+      },
+      {
+        "url": "#project",
+        "text": "我的项目"
+      },
+      {
+        "url": "#contact",
+        "text": "联系我"
+      }
+    ]
+  },
+  "home": {
+    "social_links": [
+      {
+        "name": "Gitee",
+        "url": "https://gitee.com/dancehole/",
+        "icon": "./assets/img/gitee.svg"
+      },
+      {
+        "name": "GitHub",
+        "url": "http://github.com/dancehole",
+        "icon": "uil uil-github-alt"
+      },
+      {
+        "name": "CSDN",
+        "url": "https://blog.csdn.net/dancehole",
+        "icon": "./assets/img/csdn.svg"
+      },
+      {
+        "name": "51CTO",
+        "url": "https://ost.51cto.com/person/posts/15492766",
+        "icon": "./assets/img/51cto.svg"
+      }
+    ],
+    "personal_info": {
+      "title": "Hi, 我是邓仕昊",
+      "nickname": "@dancehole",
+      "description": "深技大在逃大学生（实习版）这是一份个人简历，欢迎前来了解我的作品，我们一起为开源贡献出力。商务合作请邮箱联系👇。(左侧为社交链接)"
+    },
+    "cta_button": {
+      "text": "Contact Me",
+      "icon": "uil uil-message"
+    },
+    "scroll_message": {
+      "name": "往下滑0.w"
+    }
+  },
+  "about": {
+    "about_title": "个人简介",
+    "about_subtitle": "关于我",
+    "about_image": "assets/img/dsh.jpg",
+    "about_description": [
+      "&emsp;&emsp;我是邓仕昊，深圳技术大学大数据与互联网学院大三在读，目前正在嘉为实习 & 备考中。",
+      "&emsp;&emsp;因计算机相关知识感兴趣在课内外学习了前端开发、(基于python的)后端开发、网络与运维(Saas)、嵌入式(软件开发)、fpga开发、3D打印与机械结构、开源鸿蒙操作系统等领域的相关知识。",
+      "&emsp;&emsp;主要作品包含专利证书、校内外奖项、个人与团队的项目成果多件。目前在实习空余时间钻研计算机软件系统，输出系统性博客与文章，偶尔捣鼓一些web和嵌入式小项目等。"
+    ],
+    "experience": [
+      {
+        "years": "3年+",
+        "name": "前端开发经验"
+      },
+      {
+        "years": "3年+",
+        "name": "服务器运维经验"
+      },
+      {
+        "years": "20+",
+        "name": "校内外比赛奖项"
+      }
+    ],
+    "resume_link": "assets/pdf/resume.pdf",
+    "download_resume_text": "下载我的简历"
+  },
+  "skills": {
+    "skills_title": "我的技能",
+    "skills_subtitle": "My technical level",
+    "skill_groups": [
+      {
+        "title": "编码能力",
+        "subtitle": "全栈开发者/学习者，掌握跨专业多领域知识",
+        "icon": "uil uil-brackets-curly",
+        "skills": [
+          {
+            "name": "html5/css3/js",
+            "percentage": "95%",
+            "class": "html"
+          },
+          {
+            "name": "python",
+            "percentage": "80%",
+            "class": "python"
+          },
+          {
+            "name": "java",
+            "percentage": "70%",
+            "class": "java"
+          },
+          {
+            "name": "C/C++",
+            "percentage": "60%",
+            "class": "cpp"
+          },
+          {
+            "name": "sql",
+            "percentage": "50%",
+            "class": "sql"
+          },
+          {
+            "name": "Verilog",
+            "percentage": "40%",
+            "class": "verilog"
+          }
+        ]
+      },
+      {
+        "title": "专业技能",
+        "subtitle": "开发所需的其他soft skills",
+        "icon": "uil uil-server-network",
+        "skills": [
+          {
+            "name": "前端框架：Vuejs、React",
+            "percentage": "95%",
+            "class": "vue"
+          },
+          {
+            "name": "后端框架：Spring、Gin、Flask、Django",
+            "percentage": "90%",
+            "class": "backend"
+          },
+          {
+            "name": "云原生：Linux、Docker",
+            "percentage": "80%",
+            "class": "cloud_native"
+          },
+          {
+            "name": "开发环境：Git、Postman接口调试",
+            "percentage": "70%",
+            "class": "dev_env"
+          }
+        ]
+      }
+    ]
+  },
+  "qualification": {
+    "qualification_title": "个人经历",
+    "qualification_subtitle": "My personal journey",
+    "content": [
+      {
+        "title": "教育经历",
+        "icon": "uil uil-graduation-cap",
+        "id": "education",
+        "details": [
+          {
+            "title": "初中 & 高中",
+            "subtitle": "广州市 - 育才中学",
+            "dates": "2015 - 2021"
+          },
+          {
+            "title": "深圳技术大学",
+            "subtitle": "物联网工程",
+            "dates": "2021-2025"
+          },
+          {
+            "title": "深圳大学",
+            "subtitle": "计算机应用-404专业",
+            "dates": "2025 - 2028"
+          }
+        ]
+      },
+      {
+        "title": "工作经历",
+        "icon": "uil uil-briefcase-alt",
+        "id": "experience",
+        "details": [
+          {
+            "title": "开放原子创客协会",
+            "subtitle": "南向开发部",
+            "dates": "2022-2023"
+          },
+          {
+            "title": "嘉为科技有限公司",
+            "subtitle": "前端研发工程师",
+            "dates": "2024.3-2024.7"
+          }
+        ]
+      }
+    ]
+  },
+  "project": {
+    "portfolio_title": "我的作品集",
+    "portfolio_subtitle": "开源作品集（个人项目）",
+    "projects": [
+      {
+        "image_path": "assets/img/codelabs.jpg",
+        "alt": "CodeLabs项目图片",
+        "title": "CodeLabs",
+        "description": "基于Mkdocs的博客系统，可以复用为工作日志文档、笔记知识库、项目文档等。因其美观实用，简洁且无需后端的优势位列展示栏第一",
+        "link": "https://dancehole.github.io/Codelabs/",
+        "button_text": "项目展示地址"
+      },
+      {
+        "image_path": "./assets/img/chess.jpg",
+        "alt": "三角网络五子棋项目图片",
+        "title": "三角网络五子棋",
+        "description": "数据结构大作业",
+        "link": "https://gitee.com/dancehole/chess",
+        "button_text": "源代码地址"
+      }
+    ]
+  },
+  "contact": {
+    "contact_title": "联系我",
+    "contact_subtitle": "心动不如行动~来加我呀",
+    "contact_info": [
+      {
+        "icon": "uil-phone-alt",
+        "title": "Github",
+        "subtitle": "www.github.com/dancehole"
+      },
+      {
+        "icon": "uil-envelope",
+        "title": "Email",
+        "subtitle": "1391755954@qq.com"
+      },
+      {
+        "icon": "uil-map-marker",
+        "title": "Location",
+        "subtitle": "GuangDong , CHN"
+      }
+    ]
+  },
+  "footer": {
+    "more_info_title": "更多信息",
+    "more_info_subtitle": "访问更好玩更有趣的东西吧~",
+    "links": [
+      {
+        "text": "Codelabs",
+        "url": "https://dancehole.github.io/Codelabs/"
+      },
+      {
+        "text": "workOA",
+        "url": "#portfolio"
+      },
+      {
+        "text": "..todo",
+        "url": "#contact"
+      }
+    ],
+    "social_media": [
+      {
+        "icon": "gitee",
+        "url": "https://gitee.com/dancehole"
+      },
+      {
+        "icon": "github",
+        "url": "http://github.com/dancehole"
+      },
+      {
+        "icon": "bilibili-line",
+        "url": "https://t.bilibili.com/"
+      }
+    ],
+    "copyright": "dancehole.cn",
+    "credits": [
+      {
+        "name": "ASOUTHERNCAT",
+        "url": "https://gitee.com/asoutherncat/responsive-portfolio-website/tree/master/assets"
+      },
+      {
+        "name": "Bedimcode",
+        "url": "https://www.youtube.com/c/Bedimcode"
+      }
+    ]
+  }
+}
