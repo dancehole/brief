@@ -179,7 +179,10 @@
         <!--导航栏-->
         <div class="qualification__tabs">
           {% for item in qualification.content %}
-          <div class="qualification__button button--flex" data-target="#{{item.id}}">
+          <div class="qualification__button 
+                      button--flex
+                      {% if loop.first %}qualification__active{% endif %}" 
+                      data-target="#{{item.id}}">
             <i class="{{item.icon}} qualification__icon"></i>
             <span>{{ item.title }}</span>
           </div>
@@ -232,7 +235,10 @@
       <!--导航栏-->
       <div class="qualification__tabs">
         {% for item in project.content %}
-        <div class="qualification__button button--flex" data-target2="#{{item.id}}">
+        <div class="qualification__button 
+                    button--flex 
+                    {% if loop.first %}project__active{% endif %}" 
+                    data-target2="#{{item.id}}">
           <i class="{{item.icon}} qualification__icon"></i>
           <span>{{ item.title }}</span>
         </div>

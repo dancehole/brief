@@ -91,16 +91,6 @@ tabs2.forEach(tab => {
     tab.classList.add('project__active')
   })
 })
-// document.querySelectorAll('.portfolio__button').forEach(button => {
-//   button.addEventListener('click', function(e) {
-//     const targetId = this.getAttribute('data-target');
-//     document.querySelectorAll('.project__content').forEach(content => {
-//       content.classList.remove('project__active');
-//     });
-//     document.querySelector(targetId).classList.add('project__active');
-//   });
-// });
-
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper('.portfolio__container', {
     cssMode: true,

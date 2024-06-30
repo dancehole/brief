@@ -653,6 +653,10 @@ img {
   color: var(--first-color)
 }
 
+.qualification__button.project__active {
+  color: var(--first-color)
+}
+
 /* Active Modal */
 .active-modal {
   opacity: 1;
