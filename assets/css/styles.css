@@ -641,11 +641,11 @@ img {
   display: block;
 }
 
-.project__content[data-content]{
+.project__content[data-content2]{
   display: none;
 }
 
-.project__active[data-content]{
+.project__active[data-content2]{
   display: block;
 }
 
