@@ -186,52 +186,68 @@
           {% endfor %}
         </div>
 
-          <!-- 多级列表 -->
-          <div class="qualification__sections">
-            {% for item in qualification.content %}<!--分类-->
-            <div class="qualification__content 
+        <!-- 多级列表 -->
+        <div class="qualification__sections">
+          {% for item in qualification.content %}<!--分类-->
+          <div class="qualification__content 
                 {% if loop.first %} qualification__active{% endif %}" data-content id="{{ item.id }}">
-              {% for sub_item in item.details %}<!--分类下的类目 交替排列-->
-              <div class="qualification__data">
-                {% if loop.index is even %}<!--仅偶数-->
-                <div></div>
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-                {% endif %}
-
-                <div>
-                  <h3 class="qualification__title">{{ sub_item.title }}</h3>
-                  <span class="qualification__subtitle">{{ sub_item.subtitle }}</span>
-                  <div class="qualification__calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    {{ sub_item.dates }}
-                  </div>
-                </div>
-
-                {% if loop.index is odd %}<!--仅奇数-->
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-                {% endif %}
+            {% for sub_item in item.details %}<!--分类下的类目 交替排列-->
+            <div class="qualification__data">
+              {% if loop.index is even %}<!--仅偶数-->
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
               </div>
-              {% endfor %}
+              {% endif %}
+
+              <div>
+                <h3 class="qualification__title">{{ sub_item.title }}</h3>
+                <span class="qualification__subtitle">{{ sub_item.subtitle }}</span>
+                <div class="qualification__calendar">
+                  <i class="uil uil-calendar-alt"></i>
+                  {{ sub_item.dates }}
+                </div>
+              </div>
+
+              {% if loop.index is odd %}<!--仅奇数-->
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              {% endif %}
             </div>
             {% endfor %}
           </div>
+          {% endfor %}
+        </div>
 
     </section>
 
-    <!--==================== PORTFOLIO 个人经历==============-->
+    <!--==================== PORTFOLIO 个人经历/作品集==============-->
     <section class="portfolio section" id="portfolio">
       <h2 class="section__title">{{ project.portfolio_title }}</h2>
       <span class="section__subtitle">{{ project.portfolio_subtitle }}</span>
 
-      <div class="portfolio__container container swiper-container">
+      <!--导航栏-->
+      <div class="qualification__tabs">
+        {% for item in project.content %}
+        <div class="qualification__button button--flex" data-target2="#{{item.id}}">
+          <i class="{{item.icon}} qualification__icon"></i>
+          <span>{{ item.title }}</span>
+        </div>
+        {% endfor %}
+      </div>
+
+      {%for item in project.content%}
+      <div class="portfolio__container
+                  container swiper-container
+                  {% if loop.first %}project__active{% endif %}
+                  project__content"
+                  data-content2
+                  id="{{item.id}}">
         <div class="swiper-wrapper">
-          {% for project in project.projects %}
+          {% for project in item.details %}
           <!-- PORTFOLIO ITEM -->
           <div class="portfolio__content grid swiper-slide">
             <img src="{{ project.image_path }}" alt="{{ project.alt }}" class="portfolio__img" />
@@ -258,6 +274,7 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
+      {%endfor%}
     </section>
 
     <!--==================== CONTACT ME ====================-->

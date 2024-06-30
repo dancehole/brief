@@ -70,6 +70,37 @@ tabs.forEach(tab => {
 })
 
 
+// 补充一个作品集的tab选择
+// 假设这是简化的示例，实际中您可能需要根据项目结构调整选择器
+const tabs2 = document.querySelectorAll('[data-target2]'),
+      tabContents2 = document.querySelectorAll('[data-content2]')
+
+tabs2.forEach(tab => {
+  tab.addEventListener('click', () => {
+    console.log('click 2')
+    const target = document.querySelector(tab.dataset.target2)
+
+    tabContents2.forEach(tabContent => {
+      tabContent.classList.remove('project__active')
+    })
+    target.classList.add('project__active')
+
+    tabs2.forEach(tab => {
+      tab.classList.remove('project__active')
+    })
+    tab.classList.add('project__active')
+  })
+})
+// document.querySelectorAll('.portfolio__button').forEach(button => {
+//   button.addEventListener('click', function(e) {
+//     const targetId = this.getAttribute('data-target');
+//     document.querySelectorAll('.project__content').forEach(content => {
+//       content.classList.remove('project__active');
+//     });
+//     document.querySelector(targetId).classList.add('project__active');
+//   });
+// });
+
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper('.portfolio__container', {
     cssMode: true,

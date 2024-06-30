@@ -227,6 +227,46 @@
         "link": "https://gitee.com/dancehole/chess",
         "button_text": "源代码地址"
       }
+    ],
+    "content": [
+      {
+        "title": "软件类",
+        "icon": "uil uil-graduation-cap",
+        "id": "software-projects",
+        "details": [
+          {
+            "image_path": "assets/img/codelabs.jpg",
+            "alt": "CodeLabs项目图片",
+            "title": "CodeLabs",
+            "description": "基于Mkdocs的博客系统，可以复用为工作日志文档、笔记知识库、项目文档等。因其美观实用，简洁且无需后端的优势位列展示栏第一",
+            "link": "https://dancehole.github.io/Codelabs/",
+            "button_text": "项目展示地址"
+          },
+          {
+            "image_path": "./assets/img/chess.jpg",
+            "alt": "三角网络五子棋项目图片",
+            "title": "三角网络五子棋",
+            "description": "数据结构大作业",
+            "link": "https://gitee.com/dancehole/chess",
+            "button_text": "源代码地址"
+          }
+        ]
+      },
+      {
+        "title":"硬件类",
+        "icon":"uil uil-graduation-cap",
+        "id":"hardware-projects",
+        "details":[
+          {
+            "image_path": "assets/img/codelabs.jpg",
+            "alt": "CodeLabs项目图片",
+            "title": "CodeLabs",
+            "description": "基于Mkdocs的博客系统，可以复用为工作日志文档、笔记知识库、项目文档等。因其美观实用，简洁且无需后端的优势位列展示栏第一",
+            "link": "https://dancehole.github.io/Codelabs/",
+            "button_text": "项目展示地址"
+          }
+        ]
+      }
     ]
   },
   "contact": {
