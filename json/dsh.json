@@ -31,7 +31,7 @@
     ]
   },
   "home": {
-    "img":"https://cdn.jsdelivr.net/gh/dancehole/image@main/img/1080x1080.ico",
+    "img": "https://cdn.jsdelivr.net/gh/dancehole/image@main/img/1080x1080.ico",
     "social_links": [
       {
         "name": "Gitee",
@@ -255,31 +255,30 @@
     "more_info_title": "更多信息",
     "more_info_subtitle": "访问更好玩更有趣的东西吧~",
     "links": [
-      {
-        "text": "Codelabs",
-        "url": "https://dancehole.github.io/Codelabs/"
-      },
-      {
-        "text": "workOA",
-        "url": "#portfolio"
-      },
-      {
-        "text": "..todo",
-        "url": "#contact"
-      }
+      [
+        {
+          "text": "项目"
+        },
+        {
+          "text": "Codelabs",
+          "url": "https://dancehole.github.io/Codelabs/"
+        }
+      ],
+      [
+        {
+          "text": "demo"
+        }
+      ],
+      [
+        {
+          "text" : "todo"
+        }
+      ]
     ],
     "social_media": [
       {
         "icon": "./assets/img/gitee.svg",
-        "url": "https://gitee.com/dancehole/"
-      },
-      {
-        "icon": "uil uil-github-alt",
         "url": "http://github.com/dancehole"
-      },
-      {
-        "icon": "./assets/img/cyyQRcode.png",
-        "url": "https://t.bilibili.com/"
       }
     ],
     "copyright": "dancehole.cn",

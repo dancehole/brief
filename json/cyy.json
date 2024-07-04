@@ -31,7 +31,7 @@
     ]
   },
   "home": {
-    "img":"https://cdn.jsdelivr.net/gh/dancehole/image@main/img/1080x1080.ico",
+    "img": "https://cdn.jsdelivr.net/gh/dancehole/image@main/img/1080x1080.ico",
     "social_links": [
       {
         "name": "ins",
@@ -234,14 +234,18 @@
     "more_info_title": "更多信息",
     "more_info_subtitle": "访问更好玩更有趣的东西吧~",
     "links": [
-      {
-        "text": "小红书",
-        "url": "https://www.xiaohongshu.com/user/profile/5e37f028000000000100499d"
-      },
-      {
-        "text": "bilibili",
-        "url": "https://t.bilibili.com/"
-      }
+      [
+        {
+          "text": "小红书",
+          "url": "https://www.xiaohongshu.com/user/profile/5e37f028000000000100499d"
+        }
+      ],
+      [
+        {
+          "text": "bilibili",
+          "url": "https://t.bilibili.com/"
+        }
+      ]
     ],
     "social_media": [
       {
