@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <!--==================== UNICONS 图标 + font Awesome图标====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <!--==================== SWIPER CSS ====================-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <!-- iconfont font class 方式引用图标 -->
+  <!-- <link
+      rel="stylesheet"
+      href="https://at.alicdn.com/t/c/font_3900458_82z46p85im.css"
+    /> -->
+
+  <title>{{title}}</title>
+</head>
+
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header scroll-header" id="header">
+    <nav class="nav container">
+      <!-- {%for item in header.navLeft%} -->
+      <a href="{{item.url}}" class="nav__logo" target="_blank">{{item.name}}</a>
+      <!-- {%endfor%} -->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <!--这里理论上要对应（业内导航）-->
+          <!-- {%for item in header.navRight%} -->
+          <li class="nav__item">
+            <a href="{{item.url}}" class="nav__link">
+              <i class="uil nav__icon"></i>
+              <p>{{item.text}}</p>
+            </a>
+          </li>
+          <!-- {%endfor%} -->
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+
+      <div class="nav__btns">
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--==================== MAIN ====================-->
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content grid">
+          <div class="home__social">
+            {% for link in home.social_links %}
+            <a href="{{ link.url }}" target="_blank" class="home__social-icon">
+              <!--假如有uil 则就是图标 否则默认为图片 20x20px-->
+              {% if 'uil' in link.icon %}
+              <i class="uil {{ link.icon }}"></i>
+              {% else %}
+              <img src="{{ link.icon }}">
+              {% endif %}
+            </a>
+            {% endfor %}
+          </div>
+
+          <div class="home__img">
+            <img class="home__blob" src="https://cdn.jsdelivr.net/gh/dancehole/image@main/img/1080x1080.ico" />
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">{{ home.personal_info.title }}</h1>
+            <h3 class="home__subtitle">{{ home.personal_info.nickname }}</h3>
+            <p class="home__description">{{ home.personal_info.description }}</p>
+            <a href="#contact" class="button button-flex">
+              <span>{{ home.cta_button.text }}</span>
+              <i class="uil {{ home.cta_button.icon }}"></i>
+            </a>
+          </div>
+        </div>
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button--flex">
+            <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+            <span class="home__scroll-name">{{ home.scroll_message.name }}</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--========== ABOUT 个人简介================-->
+    <section class="about section" id="about">
+      <h2 class="section__title">{{ about.about_title }}</h2>
+      <span class="section__subtitle">{{ about.about_subtitle }}</span>
+      <div class="about__container container grid">
+        <img src="{{ about.about_image }}" alt="about" class="about__img" />
+
+        <div class="about__data">
+          <p class="about__description">
+            {% for line in about.about_description %}
+            {{ line }}
+            <br />
+            {% endfor %}
+          </p>
+          <!--经历关键词（大标题+内容）-->
+          <div class="about__info">
+            {% for info in about.experience %}
+            <div>
+              <span class="about__info-title">{{ info.years }}</span>
+              <span class="about__info-name">{{ info.name }}</span>
+            </div>
+            {% endfor %}
+          </div>
+          <!--下载附件-->
+          <div class="about__buttons">
+            <a download="" href="{{ about.resume_link }}" class="button button--flex" target="_blank">
+              <span>{{ about.download_resume_text }}</span><i class="uil uil-download-alt button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SKILLS ====================-->
+    <section class="skills section" id="skills">
+      <h2 class="section__title">{{ skills.skills_title }}</h2>
+      <span class="section__subtitle">{{ skills.skills_subtitle }}</span>
+
+      <div class="skills__container container grid">
+        <div>
+          {% for skill_group in skills.skill_groups %}
+          <!--==================== SKILLS GROUP ====================-->
+          <div class="skills__content skills__{{ 'open' if loop.index == 1 else 'close' }}">
+            <div class="skills__header">
+              <i class="{{ skill_group.icon }} skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">{{ skill_group.title }}</h1>
+                <span class="skills__subtitle">{{ skill_group.subtitle }}</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              {% for skill in skill_group.skills %}
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">{{ skill.name }}</h3>
+                  <span class="skills__number">{{ skill.percentage }}</span>
+                </div>
+                <div class="skills__bar">
+                  <div style="width: {{ skill.percentage }}%;" class="skills__percentage skills__{{ skill.class }}">
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!--==================== QUALIFICATION ====================-->
+    <section class="qualification section">
+      <h2 class="section__title">{{ qualification.qualification_title }}</h2>
+      <span class="section__subtitle">{{ qualification.qualification_subtitle }}</span>
+
+      <div class="qualification__container container">
+        <!--导航栏-->
+        <div class="qualification__tabs">
+          {% for item in qualification.content %}
+          <div class="qualification__button button--flex" data-target="#{{item.id}}">
+            <i class="{{item.icon}} qualification__icon"></i>
+            <span>{{ item.title }}</span>
+          </div>
+          {% endfor %}
+        </div>
+
+          <!-- 多级列表 -->
+          <div class="qualification__sections">
+            {% for item in qualification.content %}<!--分类-->
+            <div class="qualification__content 
+                {% if loop.first %} qualification__active{% endif %}" data-content id="{{ item.id }}">
+              {% for sub_item in item.details %}<!--分类下的类目 交替排列-->
+              <div class="qualification__data">
+                {% if loop.index is even %}<!--仅偶数-->
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                {% endif %}
+
+                <div>
+                  <h3 class="qualification__title">{{ sub_item.title }}</h3>
+                  <span class="qualification__subtitle">{{ sub_item.subtitle }}</span>
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    {{ sub_item.dates }}
+                  </div>
+                </div>
+
+                {% if loop.index is odd %}<!--仅奇数-->
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                {% endif %}
+              </div>
+              {% endfor %}
+            </div>
+            {% endfor %}
+          </div>
+
+    </section>
+
+    <!--==================== PORTFOLIO 个人经历==============-->
+    <section class="portfolio section" id="portfolio">
+      <h2 class="section__title">{{ project.portfolio_title }}</h2>
+      <span class="section__subtitle">{{ project.portfolio_subtitle }}</span>
+
+      <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper">
+          {% for project in project.projects %}
+          <!-- PORTFOLIO ITEM -->
+          <div class="portfolio__content grid swiper-slide">
+            <img src="{{ project.image_path }}" alt="{{ project.alt }}" class="portfolio__img" />
+
+            <div class="portfolio__details">
+              <h3 class="portfolio__title">{{ project.title }}</h3>
+              <p class="portfolio__description">{{ project.description }}</p>
+              <a href="{{ project.link }}" target="_blank" class="button button--flex button--small portfolio__button">
+                {{ project.button_text }}
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <!-- END PORTFOLIO ITEM -->
+          {% endfor %}
+        </div>
+
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next">
+          <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ME ====================-->
+    <section class="contact section" id="contact">
+      <h2 class="section__title">{{ contact.contact_title }}</h2>
+      <span class="section__subtitle">{{ contact.contact_subtitle }}</span>
+
+      <div class="contact__container container grid">
+        <div>
+          {% for info in contact.contact_info %}
+          <div class="contact__information">
+            <i class="uil {{ info.icon }} contact__icon"></i>
+            <div>
+              <h3 class="contact__title">{{ info.title }}</h3>
+              <span class="contact__subtitle">{{ info.subtitle }}</span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">{{ footer.more_info_title }}</h1>
+          <span class="footer__subtitle">{{ footer.more_info_subtitle }}</span>
+        </div>
+
+        <!-- 不带图标的链接 -->
+        <ul class="footer__links">
+          {% for link in footer.links %}
+          <li>
+            <a href="{{ link.url }}" target="_blank" class="footer__link">{{ link.text }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <!--带图标或者图片的连接-->
+        <div class="footer__socials">
+          {% for social in footer.social_media %}
+          <a href="{{ social.url }}" target="_blank">
+            <svg class="icon footer__social" aria-hidden="true">
+              <use xlink:href="#icon-{{ social.icon }}"></use>
+            </svg>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <p class="footer__copy">
+        &copy; <b>{{ footer.copyright }}</b><br>
+        致谢:
+        {% for credit in footer.credits %}
+        <a class="footer__copy" href="{{ credit.url }}" target="_blank">{{ credit.name }}</a>{% if not loop.last %}, {%
+        endif %}
+        {% endfor %}
+      </p>
+    </div>
+  </footer>
+
+  <!--==================== SCROLL TOP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+  <!--==================== SWIPER JS ====================-->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+  <!-- iconfont JS -->
+  <script src="assets/js/iconfont.js"></script>
+  <!-- jquery -->
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="assets/js/jquery.i18n.min.js"></script>
+  <!--==================== MAIN JS ====================-->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+{
+  "title": "陈妍妍的简历",
+  "header": {
+    "navLeft": [
+      {
+        "name": "下载简历pdf",
+        "url": "./assets/pdf/cyy.pdf"
+      }
+    ],
+    "navRight": [
+      {
+        "url": "#home",
+        "text": "首页"
+      },
+      {
+        "url": "#about",
+        "text": "关于我"
+      },
+      {
+        "url": "#skills",
+        "text": "我的技能"
+      },
+      {
+        "url": "#project",
+        "text": "作品集"
+      },
+      {
+        "url": "#contact",
+        "text": "联系我"
+      }
+    ]
+  },
+  "home": {
+    "social_links": [
+      {
+        "name": "ins",
+        "url": "",
+        "icon": "uil uil-linkedin-alt"
+      },
+      {
+        "name": "GitHub",
+        "url": "http://github.com/dancehole",
+        "icon": "uil uil-github-alt"
+      },
+      {
+        "name": "bilibili",
+        "url": "https://t.bilibili.com/",
+        "icon": "./assets/img/bilibili.svg"
+      },
+      {
+        "name": "red-book",
+        "url": "https://www.xiaohongshu.com/user/profile/5e37f028000000000100499d",
+        "icon": "fa fa-book"
+      }
+    ],
+    "personal_info": {
+      "title": "Hi, 我是陈妍妍",
+      "nickname": "青春女大,不要崇拜我",
+      "description": "长着一双炯炯有神的眼睛，一个樱桃小嘴，一个甜甜的酒窝。"
+    },
+    "cta_button": {
+      "text": "Contact Me",
+      "icon": "uil uil-message"
+    },
+    "scroll_message": {
+      "name": "往下滑0.w"
+    }
+  },
+  "about": {
+    "about_title": "个人简介",
+    "about_subtitle": "关于我",
+    "about_image": "assets/img/cyy.jpg",
+    "about_description": [
+      "&emsp;大家好，我是陈妍妍，广东工业大学大一在读。我的外貌特点是长着一双炯炯有神的眼睛，一个樱桃小嘴，还有一个甜甜的酒窝，这些都让我看起来很有精神和亲和力。<br>",
+      "&emsp;在学业上，我主修工商管理专业，对这个领域有着浓厚的兴趣和热情。除了课堂学习，我还积极参与各种课外活动，比如学生会、志愿服务和社团活动，这些经历不仅让我提升了自己的综合素质，还结识了很多志同道合的朋友。"
+    ],
+    "experience": [
+      {
+        "years": "3年+",
+        "name": "视频剪辑<br>经验"
+      },
+      {
+        "years": "3年+",
+        "name": "中国舞经验"
+      },
+      {
+        "years": "20+",
+        "name": "比赛奖项"
+      }
+    ],
+    "resume_link": "assets/pdf/cyy.pdf",
+    "download_resume_text": "下载我的简历"
+  },
+  "skills": {
+    "skills_title": "我的技能",
+    "skills_subtitle": "My technical level",
+    "skill_groups": [
+      {
+        "title": "成绩优秀的大学生",
+        "subtitle": "绩点前10",
+        "icon": "uil uil-graduation-cap",
+        "skills": [
+          {
+            "name": "高等数学",
+            "percentage": "95%",
+            "class": "html"
+          },
+          {
+            "name": "线性代数",
+            "percentage": "80%",
+            "class": "python"
+          },
+          {
+            "name": "大学计算机",
+            "percentage": "60%",
+            "class": "java"
+          }
+        ]
+      },
+      {
+        "title": "丰富的技能",
+        "subtitle": "超过十余种兴趣爱好",
+        "icon": "uil uil-server-network",
+        "skills": [
+          {
+            "name": "做饭",
+            "percentage": "95%",
+            "class": "vue"
+          },
+          {
+            "name": "跳舞",
+            "percentage": "90%",
+            "class": "backend"
+          },
+          {
+            "name": "唱歌",
+            "percentage": "80%",
+            "class": "cloud_native"
+          },
+          {
+            "name": "羽毛球",
+            "percentage": "70%",
+            "class": "dev_env"
+          }
+        ]
+      }
+    ]
+  },
+  "qualification": {
+    "qualification_title": "个人经历",
+    "qualification_subtitle": "My personal journey",
+    "content": [
+      {
+        "title": "教育经历",
+        "icon": "uil uil-graduation-cap",
+        "id": "education",
+        "details": [
+          {
+            "title": "成绩优秀的女高中生",
+            "subtitle": "安徽省 - 野寨中学",
+            "dates": "2020 - 2023"
+          },
+          {
+            "title": "活蹦乱跳的女大学生",
+            "subtitle": "偶尔发癫",
+            "dates": "2023 - 2027"
+          }
+        ]
+      },
+      {
+        "title": "工作经历",
+        "icon": "uil uil-briefcase-alt",
+        "id": "experience",
+        "details": [
+          {
+            "title": "税务局",
+            "subtitle": "xxx",
+            "dates": "2022-2023"
+          },
+          {
+            "title": "xx",
+            "subtitle": "xxx",
+            "dates": "xxxx - xxxx"
+          }
+        ]
+      }
+    ]
+  },
+  "project": {
+    "portfolio_title": "我的爱好",
+    "portfolio_subtitle": "千万浏览的博主日常",
+    "projects": [
+      {
+        "image_path": "assets/img/portfolio1.jpg",
+        "alt": "追追李健",
+        "title": "追追李健",
+        "description": "这个春天遇见心软的神了 救命！谁懂广州场健哥开场的服装真的好像鬼怪里的阿加西！!！我有属于自己的鬼怪 ljls真的好帅，歌唱的也好听，我在台下一整个疯狂，但现在还迷糊着呢，人在上线代，心在想李健喜欢李健老师从一场演唱会开始！垂直入坑！",
+        "link": "http://xhslink.com/6YUh8K",
+        "button_text": "去看原文"
+      },
+      {
+        "image_path": "./assets/img/chess.jpg",
+        "alt": "练练书法",
+        "title": "练练书法",
+        "description": "重生之女大勇闯书法圈，就还挺文雅的吧",
+        "link": "http://xhslink.com/bcPj8K",
+        "button_text": "去看原文"
+      }
+    ]
+  },
+  "contact": {
+    "contact_title": "联系我",
+    "contact_subtitle": "心动不如行动~来加我呀",
+    "contact_info": [
+      {
+        "icon": "uil-phone-alt",
+        "title": "给我打Call~",
+        "subtitle": "111222333(才不告诉你)"
+      },
+      {
+        "icon": "fa fa-comments",
+        "title": "微信",
+        "subtitle": "才不告诉你我的微信呢~"
+      },
+      {
+        "icon": "uil-map-marker",
+        "title": "Location",
+        "subtitle": "AnHui , CHN"
+      }
+    ]
+  },
+  "footer": {
+    "more_info_title": "更多信息",
+    "more_info_subtitle": "访问更好玩更有趣的东西吧~",
+    "links": [
+      {
+        "text": "小红书",
+        "url": "https://www.xiaohongshu.com/user/profile/5e37f028000000000100499d"
+      },
+      {
+        "text": "bilibili",
+        "url": "https://t.bilibili.com/"
+      }
+    ],
+    "social_media": [
+      {
+        "icon": "fa fa-book",
+        "url": "https://www.xiaohongshu.com/user/profile/5e37f028000000000100499d"
+      }
+    ],
+    "copyright": "dancehole.cn",
+    "credits": [
+      {
+        "name": "ASOUTHERNCAT",
+        "url": "https://gitee.com/asoutherncat/responsive-portfolio-website/tree/master/assets"
+      },
+      {
+        "name": "Bedimcode",
+        "url": "https://www.youtube.com/c/Bedimcode"
+      }
+    ]
+  }
+}
