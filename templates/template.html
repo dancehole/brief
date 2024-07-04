@@ -73,7 +73,7 @@
           </div>
 
           <div class="home__img">
-            <img class="home__blob" src="https://cdn.jsdelivr.net/gh/dancehole/image@main/img/1080x1080.ico" />
+            <img class="home__blob" src="{{home.img}}" />
           </div>
 
           <div class="home__data">
@@ -303,9 +303,11 @@
         <div class="footer__socials">
           {% for social in footer.social_media %}
           <a href="{{ social.url }}" target="_blank">
-            <svg class="icon footer__social" aria-hidden="true">
-              <use xlink:href="#icon-{{ social.icon }}"></use>
-            </svg>
+            {% if social.icon.startswith('fa') or social.icon.startswith('uil') %}
+            <i class="icon footer__social uil {{social.icon}} "></i>
+            {% else %}
+            <img src="{{ social.icon }}" alt="{{ social.icon }} Icon" />
+            {% endif %}
           </a>
           {% endfor %}
         </div>

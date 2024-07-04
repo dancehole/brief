@@ -502,7 +502,7 @@
           </div>
           
           <div class="contact__information">
-            <i class="uil fa-comments contact__icon"></i>
+            <i class="uil fa fa-comments contact__icon"></i>
             <div>
               <h3 class="contact__title">微信</h3>
               <span class="contact__subtitle">才不告诉你我的微信呢~</span>
@@ -531,21 +531,30 @@
           <span class="footer__subtitle">访问更好玩更有趣的东西吧~</span>
         </div>
 
-        <!-- 使用Jinja2循环遍历链接 -->
+        <!-- 不带图标的链接 -->
         <ul class="footer__links">
           
           <li>
             <a href="https://www.xiaohongshu.com/user/profile/5e37f028000000000100499d" target="_blank" class="footer__link">小红书</a>
           </li>
           
+          <li>
+            <a href="https://t.bilibili.com/" target="_blank" class="footer__link">bilibili</a>
+          </li>
+          
         </ul>
 
+        <!--带图标或者图片的连接-->
         <div class="footer__socials">
           
           <a href="https://www.xiaohongshu.com/user/profile/5e37f028000000000100499d" target="_blank">
-            <svg class="icon footer__social" aria-hidden="true">
+            
+            <i class="icon footer__social uil fa fa-book "></i>
+            
+            
+            <!-- <svg class="icon footer__social" aria-hidden="true">
               <use xlink:href="#icon-fa fa-book"></use>
-            </svg>
+            </svg> -->
           </a>
           
         </div>

@@ -31,6 +31,7 @@
     ]
   },
   "home": {
+    "img":"https://cdn.jsdelivr.net/gh/dancehole/image@main/img/1080x1080.ico",
     "social_links": [
       {
         "name": "ins",
@@ -69,7 +70,7 @@
   "about": {
     "about_title": "个人简介",
     "about_subtitle": "关于我",
-    "about_image": "assets/img/cyy.jpg",
+    "about_image": "assets/img/about.jpg",
     "about_description": [
       "&emsp;大家好，我是陈妍妍，广东工业大学大一在读。我的外貌特点是长着一双炯炯有神的眼睛，一个樱桃小嘴，还有一个甜甜的酒窝，这些都让我看起来很有精神和亲和力。<br>",
       "&emsp;在学业上，我主修工商管理专业，对这个领域有着浓厚的兴趣和热情。除了课堂学习，我还积极参与各种课外活动，比如学生会、志愿服务和社团活动，这些经历不仅让我提升了自己的综合素质，还结识了很多志同道合的朋友。"

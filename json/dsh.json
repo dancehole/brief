@@ -31,6 +31,7 @@
     ]
   },
   "home": {
+    "img":"https://cdn.jsdelivr.net/gh/dancehole/image@main/img/1080x1080.ico",
     "social_links": [
       {
         "name": "Gitee",
@@ -269,15 +270,15 @@
     ],
     "social_media": [
       {
-        "icon": "gitee",
-        "url": "https://gitee.com/dancehole"
+        "icon": "./assets/img/gitee.svg",
+        "url": "https://gitee.com/dancehole/"
       },
       {
-        "icon": "github",
+        "icon": "uil uil-github-alt",
         "url": "http://github.com/dancehole"
       },
       {
-        "icon": "bilibili-line",
+        "icon": "./assets/img/cyyQRcode.png",
         "url": "https://t.bilibili.com/"
       }
     ],

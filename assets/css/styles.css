@@ -313,6 +313,7 @@ img {
 .home__blob {
   width: 200px;
   fill: var(--first-color);
+  border-radius: 50%;
 }
 
 .home__blob-img {
@@ -797,6 +798,10 @@ img {
 .footer__social {
   font-size: 1.35rem;
   margin-right: var(--mb-1-5);
+}
+
+.footer__img{
+  width: 35px;
 }
 
 .footer__social:hover {
