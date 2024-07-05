@@ -234,6 +234,7 @@
           {% for project in project.projects %}
           <!-- PORTFOLIO ITEM -->
           <div class="portfolio__content grid swiper-slide">
+            <!--建议图片比例：正方形或者竖屏，横屏图片目前适配不充分【目前强制拉伸到1：1 320px，额外的部分可能被裁剪】-->
             <img src="{{ project.image_path }}" alt="{{ project.alt }}" class="portfolio__img" />
 
             <div class="portfolio__details">

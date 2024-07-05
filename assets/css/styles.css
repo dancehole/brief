@@ -659,7 +659,8 @@ img {
 }
 
 .portfolio__img {
-  max-width: 100%;
+  max-width: 320px;
+  max-height: 320px;
   height: auto;
   border-radius: 0.5rem;
   justify-self: center;
@@ -1094,10 +1095,13 @@ img {
       width: 450px;
     }
     .portfolio__img {
-      width: 320px;
+      min-width: 320px;
+      min-height: 320px;
+      object-fit: cover;
     }
     .portfolio__content {
       align-items: center;
+      max-height: 340px;
     }
     .project {
       text-align: initial;
