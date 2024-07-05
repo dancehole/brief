@@ -158,7 +158,7 @@
                   <span class="skills__number">{{ skill.percentage }}</span>
                 </div>
                 <div class="skills__bar">
-                  <div style="width: {{ skill.percentage }}%;" class="skills__percentage skills__{{ skill.class }}">
+                  <div style="width: {{ skill.percentage }};" class="skills__percentage skills__{{ skill.class }}">
                   </div>
                 </div>
               </div>
@@ -234,6 +234,7 @@
           {% for project in project.projects %}
           <!-- PORTFOLIO ITEM -->
           <div class="portfolio__content grid swiper-slide">
+            <!--建议图片比例：正方形或者竖屏，横屏图片目前适配不充分【目前强制拉伸到1：1 320px，额外的部分可能被裁剪】-->
             <img src="{{ project.image_path }}" alt="{{ project.alt }}" class="portfolio__img" />
 
             <div class="portfolio__details">
@@ -290,29 +291,38 @@
           <span class="footer__subtitle">{{ footer.more_info_subtitle }}</span>
         </div>
 
-        <!-- 不带图标的链接 -->
-        <ul class="footer__links">
+        <!-- 不带图标的链接-->
+        <div class="footer__links">
           {% for link in footer.links %}
-          <li>
-            <a href="{{ link.url }}" target="_blank" class="footer__link">{{ link.text }}</a>
-          </li>
+          <ul class="link__items">
+            {% for item in link %}
+            <li>
+              {% if item.url %}<!--没有url就是标题-->
+              <a href="{{item.url}}" class="footer__link" target="_blank">{{item.text}}</a>
+              {% else %}
+              <p class="bold large-text">{{item.text}}</p>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
           {% endfor %}
-        </ul>
+        </div>
 
-        <!--带图标或者图片的连接-->
+        <!--带图标或者图片的连接【ps：暂时只支持图标icon，不支持其他格式】-->
         <div class="footer__socials">
           {% for social in footer.social_media %}
           <a href="{{ social.url }}" target="_blank">
             {% if social.icon.startswith('fa') or social.icon.startswith('uil') %}
             <i class="icon footer__social uil {{social.icon}} "></i>
             {% else %}
-            <img src="{{ social.icon }}" alt="{{ social.icon }} Icon" />
+            <img class="image" src="{{ social.icon }}" alt="{{ social.icon }} Icon" />
             {% endif %}
           </a>
           {% endfor %}
         </div>
       </div>
 
+      <!--版权信息-->
       <p class="footer__copy">
         &copy; <b>{{ footer.copyright }}</b><br>
         致谢:

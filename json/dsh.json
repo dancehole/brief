@@ -21,7 +21,7 @@
         "text": "我的技能"
       },
       {
-        "url": "#project",
+        "url": "#portfolio",
         "text": "我的项目"
       },
       {
@@ -31,7 +31,7 @@
     ]
   },
   "home": {
-    "img":"https://cdn.jsdelivr.net/gh/dancehole/image@main/img/1080x1080.ico",
+    "img": "https://cdn.jsdelivr.net/gh/dancehole/image@main/img/1080x1080.ico",
     "social_links": [
       {
         "name": "Gitee",
@@ -227,6 +227,30 @@
         "description": "数据结构大作业",
         "link": "https://gitee.com/dancehole/chess",
         "button_text": "源代码地址"
+      },
+      {
+        "image_path": "./assets/img/cyyQRcode.png",
+        "alt": "三角网络五子棋项目图片",
+        "title": "三角网络五子棋",
+        "description": "数据结构大作业",
+        "link": "https://gitee.com/dancehole/chess",
+        "button_text": "源代码地址"
+      },
+      {
+        "image_path": "./assets/img/portfolio2.jpg",
+        "alt": "三角网络五子棋项目图片",
+        "title": "三角网络五子棋",
+        "description": "数据结构大作业",
+        "link": "https://gitee.com/dancehole/chess",
+        "button_text": "源代码地址"
+      },
+      {
+        "image_path": "./assets/img/test.png",
+        "alt": "三角网络五子棋项目图片",
+        "title": "三角网络五子棋",
+        "description": "数据结构大作业",
+        "link": "https://gitee.com/dancehole/chess",
+        "button_text": "源代码地址"
       }
     ]
   },
@@ -255,31 +279,62 @@
     "more_info_title": "更多信息",
     "more_info_subtitle": "访问更好玩更有趣的东西吧~",
     "links": [
-      {
-        "text": "Codelabs",
-        "url": "https://dancehole.github.io/Codelabs/"
-      },
-      {
-        "text": "workOA",
-        "url": "#portfolio"
-      },
-      {
-        "text": "..todo",
-        "url": "#contact"
-      }
+      [
+        {
+          "text": "前端项目"
+        },
+        {
+          "text": "Codelabs",
+          "url": "https://dancehole.github.io/Codelabs/"
+        },
+        {
+          "text":"个人主页 | 工作台",
+          "url":"https://github.com/dancehole/Home"
+        },
+        {
+          "text":"项目介绍模板",
+          "url":"https://github.com/dancehole/introTemplate"
+        }
+      ],
+      [
+        {
+          "text": "其他项目"
+        },
+        {
+          "text":"智能水表",
+          "url":"https://gitee.com/dancehole/qrs"
+        },
+        {
+          "text":"dailyReportHandler",
+          "url":"https://github.com/dancehole/dailyReportHandler"
+        },
+        {
+          "text":"五子棋",
+          "url":"https://gitee.com/dancehole/chess"
+        }
+      ],
+      [
+        {
+          "text" : "demo示例"
+        },
+        {
+          "text":"腾讯地图示例",
+          "url":"https://github.com/dancehole/TXMapDemo"
+        }
+      ]
     ],
     "social_media": [
-      {
-        "icon": "./assets/img/gitee.svg",
-        "url": "https://gitee.com/dancehole/"
-      },
       {
         "icon": "uil uil-github-alt",
         "url": "http://github.com/dancehole"
       },
       {
-        "icon": "./assets/img/cyyQRcode.png",
-        "url": "https://t.bilibili.com/"
+        "icon":"uil uil-gitlab",
+        "url": ""
+      },
+      {
+        "icon":"uil uil-code-branch",
+        "url": ""
       }
     ],
     "copyright": "dancehole.cn",
