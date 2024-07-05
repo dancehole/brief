@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ico}}" />
   <!--==================== UNICONS 图标 + font Awesome图标====================-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -87,7 +87,7 @@
           </div>
         </div>
         <div class="home__scroll">
-          <a href="#about" class="home__scroll-button button--flex">
+          <a href="{{home.scroll_message.url}}" class="home__scroll-button button--flex">
             <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
             <span class="home__scroll-name">{{ home.scroll_message.name }}</span>
             <i class="uil uil-arrow-down home__scroll-arrow"></i>
@@ -179,7 +179,7 @@
         <!--导航栏-->
         <div class="qualification__tabs">
           {% for item in qualification.content %}
-          <div class="qualification__button button--flex" data-target="#{{item.id}}">
+          <div class="qualification__button button--flex {% if loop.first %} qualification__active{% endif %}" data-target="#{{item.id}}">
             <i class="{{item.icon}} qualification__icon"></i>
             <span>{{ item.title }}</span>
           </div>
