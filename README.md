@@ -37,15 +37,17 @@
 
 欢迎访问Brief文档仓库，参与该开源项目，与我们一起完善开发者文档。
 
+<a href="https://dancehole.github.io/brief" style="font-size: 24px;">项目预览地址：https://dancehole.github.io/brief/</a>
+
 todoing:
-- [ ] 2024-06-06+1d:完成vue重构
-- [ ] 添加动态编辑功能
+- [ x ] 添加动态编辑功能
 
 
 
 ------
 
-**仓库动态**
+**仓库动态/更新日志**
+- 2024/07/05 开始记录日志：在此之前已完成 jinja2模板重构 + 两个人的示例页面 + 配置文件。优化了页脚和项目展示的功能（支持一级分类）
 
 
 **TodoList:**

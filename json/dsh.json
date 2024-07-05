@@ -277,8 +277,16 @@
     ],
     "social_media": [
       {
-        "icon": "./assets/img/gitee.svg",
+        "icon": "uil uil-github-alt",
         "url": "http://github.com/dancehole"
+      },
+      {
+        "icon":"uil uil-gitlab",
+        "url": ""
+      },
+      {
+        "icon":"uil uil-code-branch",
+        "url": ""
       }
     ],
     "copyright": "dancehole.cn",
