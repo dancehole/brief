@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico" />
   <!--==================== UNICONS 图标 + font Awesome图标====================-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -27,7 +27,7 @@
   <header class="header scroll-header" id="header">
     <nav class="nav container">
       <!--  -->
-      <a href="./assets/pdf/resume.pdf" class="nav__logo" target="_blank">下载简历pdf</a>
+      <a href="./assets/pdf/resume-template.pdf" class="nav__logo" target="_blank">下载简历pdf</a>
       <!--  -->
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list grid">
@@ -126,7 +126,7 @@
           <div class="home__data">
             <h1 class="home__title">Hi, 我是邓仕昊</h1>
             <h3 class="home__subtitle">@dancehole</h3>
-            <p class="home__description">深技大在逃大学生（实习版）这是一份个人简历，欢迎前来了解我的作品，我们一起为开源贡献出力。商务合作请邮箱联系👇。(左侧为社交链接)</p>
+            <p class="home__description">深技大在逃大学生（实习版）这是一份个人简历，欢迎前来了解我的作品，我们一起为开源贡献出力。商务合作请邮箱联系👇<br>(左侧为社交链接)</p>
             <a href="#contact" class="button button-flex">
               <span>Contact Me</span>
               <i class="uil uil uil-message"></i>
@@ -148,7 +148,7 @@
       <h2 class="section__title">个人简介</h2>
       <span class="section__subtitle">关于我</span>
       <div class="about__container container grid">
-        <img src="assets/img/dsh.jpg" alt="about" class="about__img" />
+        <img src="assets/img/3.jpg" alt="about" class="about__img" />
 
         <div class="about__data">
           <p class="about__description">
@@ -172,7 +172,7 @@
             </div>
             
             <div>
-              <span class="about__info-title">3年+</span>
+              <span class="about__info-title">2年+</span>
               <span class="about__info-name">服务器运维经验</span>
             </div>
             
@@ -359,12 +359,12 @@
         <!--导航栏-->
         <div class="qualification__tabs">
           
-          <div class="qualification__button button--flex" data-target="#education">
+          <div class="qualification__button button--flex  qualification__active" data-target="#education">
             <i class="uil uil-graduation-cap qualification__icon"></i>
             <span>教育经历</span>
           </div>
           
-          <div class="qualification__button button--flex" data-target="#experience">
+          <div class="qualification__button button--flex " data-target="#experience">
             <i class="uil uil-briefcase-alt qualification__icon"></i>
             <span>工作经历</span>
           </div>
@@ -422,8 +422,8 @@
                 
 
                 <div>
-                  <h3 class="qualification__title">深圳大学</h3>
-                  <span class="qualification__subtitle">计算机应用-404专业</span>
+                  <h3 class="qualification__title">深圳大学(目标)</h3>
+                  <span class="qualification__subtitle">(奋战考研ing)</span>
                   <div class="qualification__calendar">
                     <i class="uil uil-calendar-alt"></i>
                     2025 - 2028
@@ -500,7 +500,8 @@
           
           <!-- PORTFOLIO ITEM -->
           <div class="portfolio__content grid swiper-slide">
-            <img src="assets/img/codelabs.jpg" alt="CodeLabs项目图片" class="portfolio__img" />
+            <!--建议图片比例：正方形或者竖屏，横屏图片目前适配不充分【目前强制拉伸到1：1 320px，额外的部分可能被裁剪】-->
+            <img src="assets/img/dsh/codelabs.jpg" alt="CodeLabs项目图片" class="portfolio__img" />
 
             <div class="portfolio__details">
               <h3 class="portfolio__title">CodeLabs</h3>
@@ -515,11 +516,12 @@
           
           <!-- PORTFOLIO ITEM -->
           <div class="portfolio__content grid swiper-slide">
-            <img src="./assets/img/chess.jpg" alt="三角网络五子棋项目图片" class="portfolio__img" />
+            <!--建议图片比例：正方形或者竖屏，横屏图片目前适配不充分【目前强制拉伸到1：1 320px，额外的部分可能被裁剪】-->
+            <img src="./assets/img/dsh/chess.jpg" alt="三角网络五子棋项目图片" class="portfolio__img" />
 
             <div class="portfolio__details">
               <h3 class="portfolio__title">三角网络五子棋</h3>
-              <p class="portfolio__description">数据结构大作业</p>
+              <p class="portfolio__description">数据结构与算法课程设计大作业<br>三角网络五子棋（C++实现），基于easyx图形库</p>
               <a href="https://gitee.com/dancehole/chess" target="_blank" class="button button--flex button--small portfolio__button">
                 源代码地址
                 <i class="uil uil-arrow-right button__icon"></i>
@@ -530,42 +532,13 @@
           
           <!-- PORTFOLIO ITEM -->
           <div class="portfolio__content grid swiper-slide">
-            <img src="./assets/img/cyyQRcode.png" alt="三角网络五子棋项目图片" class="portfolio__img" />
+            <!--建议图片比例：正方形或者竖屏，横屏图片目前适配不充分【目前强制拉伸到1：1 320px，额外的部分可能被裁剪】-->
+            <img src="./assets/img/dsh/water.gif" alt="水表图片" class="portfolio__img" />
 
             <div class="portfolio__details">
-              <h3 class="portfolio__title">三角网络五子棋</h3>
-              <p class="portfolio__description">数据结构大作业</p>
-              <a href="https://gitee.com/dancehole/chess" target="_blank" class="button button--flex button--small portfolio__button">
-                源代码地址
-                <i class="uil uil-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div>
-          <!-- END PORTFOLIO ITEM -->
-          
-          <!-- PORTFOLIO ITEM -->
-          <div class="portfolio__content grid swiper-slide">
-            <img src="./assets/img/portfolio2.jpg" alt="三角网络五子棋项目图片" class="portfolio__img" />
-
-            <div class="portfolio__details">
-              <h3 class="portfolio__title">三角网络五子棋</h3>
-              <p class="portfolio__description">数据结构大作业</p>
-              <a href="https://gitee.com/dancehole/chess" target="_blank" class="button button--flex button--small portfolio__button">
-                源代码地址
-                <i class="uil uil-arrow-right button__icon"></i>
-              </a>
-            </div>
-          </div>
-          <!-- END PORTFOLIO ITEM -->
-          
-          <!-- PORTFOLIO ITEM -->
-          <div class="portfolio__content grid swiper-slide">
-            <img src="./assets/img/test.png" alt="三角网络五子棋项目图片" class="portfolio__img" />
-
-            <div class="portfolio__details">
-              <h3 class="portfolio__title">三角网络五子棋</h3>
-              <p class="portfolio__description">数据结构大作业</p>
-              <a href="https://gitee.com/dancehole/chess" target="_blank" class="button button--flex button--small portfolio__button">
+              <h3 class="portfolio__title">基于开源鸿蒙的智能水表</h3>
+              <p class="portfolio__description">本作品已经实现了一个智能水表应该有的功能，也就是计水计费然后远程上传。而相比现有的家用智能水表，本作品的最大特点是它具有高度实时性、精确性、同时可以对系统远程控制的功能，非常适合应用于需要高实时性和高精度和稳定性的这个智慧农业场景下那么首先，我们现在进行我们嵌入式系统的一个模块介绍。</p>
+              <a href="https://gitee.com/dancehole/qrs" target="_blank" class="button button--flex button--small portfolio__button">
                 源代码地址
                 <i class="uil uil-arrow-right button__icon"></i>
               </a>
@@ -595,7 +568,7 @@
         <div>
           
           <div class="contact__information">
-            <i class="uil uil-phone-alt contact__icon"></i>
+            <i class="uil uil-github contact__icon"></i>
             <div>
               <h3 class="contact__title">Github</h3>
               <span class="contact__subtitle">www.github.com/dancehole</span>
