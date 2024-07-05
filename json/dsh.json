@@ -257,21 +257,45 @@
     "links": [
       [
         {
-          "text": "项目"
+          "text": "前端项目"
         },
         {
           "text": "Codelabs",
           "url": "https://dancehole.github.io/Codelabs/"
+        },
+        {
+          "text":"个人主页 | 工作台",
+          "url":"https://github.com/dancehole/Home"
+        },
+        {
+          "text":"项目介绍模板",
+          "url":"https://github.com/dancehole/introTemplate"
         }
       ],
       [
         {
-          "text": "demo"
+          "text": "其他项目"
+        },
+        {
+          "text":"智能水表",
+          "url":"https://gitee.com/dancehole/qrs"
+        },
+        {
+          "text":"dailyReportHandler",
+          "url":"https://github.com/dancehole/dailyReportHandler"
+        },
+        {
+          "text":"五子棋",
+          "url":"https://gitee.com/dancehole/chess"
         }
       ],
       [
         {
-          "text" : "todo"
+          "text" : "demo示例"
+        },
+        {
+          "text":"腾讯地图示例",
+          "url":"https://github.com/dancehole/TXMapDemo"
         }
       ]
     ],

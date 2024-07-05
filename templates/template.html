@@ -297,7 +297,7 @@
             {% for item in link %}
             <li>
               {% if item.url %}<!--没有url就是标题-->
-              <a href="{{item.url}}" class="footer__link">{{item.text}}</a>
+              <a href="{{item.url}}" class="footer__link" target="_blank">{{item.text}}</a>
               {% else %}
               <p class="bold large-text">{{item.text}}</p>
               {% endif %}
