@@ -227,6 +227,30 @@
         "description": "数据结构大作业",
         "link": "https://gitee.com/dancehole/chess",
         "button_text": "源代码地址"
+      },
+      {
+        "image_path": "./assets/img/cyyQRcode.png",
+        "alt": "三角网络五子棋项目图片",
+        "title": "三角网络五子棋",
+        "description": "数据结构大作业",
+        "link": "https://gitee.com/dancehole/chess",
+        "button_text": "源代码地址"
+      },
+      {
+        "image_path": "./assets/img/portfolio2.jpg",
+        "alt": "三角网络五子棋项目图片",
+        "title": "三角网络五子棋",
+        "description": "数据结构大作业",
+        "link": "https://gitee.com/dancehole/chess",
+        "button_text": "源代码地址"
+      },
+      {
+        "image_path": "./assets/img/test.png",
+        "alt": "三角网络五子棋项目图片",
+        "title": "三角网络五子棋",
+        "description": "数据结构大作业",
+        "link": "https://gitee.com/dancehole/chess",
+        "button_text": "源代码地址"
       }
     ]
   },

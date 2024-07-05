@@ -401,8 +401,14 @@ img {
   transition: 0.3s;
 }
 
+/* 展示地址 */
 .button--small {
   padding: 0.75rem 1rem;
+  position: relative;
+  /* 将按钮左边缘置于父元素中心 */
+  left: 50%;
+  /* 根据按钮自身的宽度，向左移动一半的距离实现居中 */
+  transform: translateX(-50%);
 }
 
 .button--link {
@@ -653,9 +659,11 @@ img {
 }
 
 .portfolio__img {
-  width: 265px;
+  max-width: 100%;
+  height: auto;
   border-radius: 0.5rem;
   justify-self: center;
+  object-fit: contain;
 }
 
 .portfolio__title {
@@ -961,6 +969,14 @@ img {
     display: grid;
     grid-template-columns: 0.6fr;
     justify-content: center;
+  }
+
+  .button--small {
+    padding: 0.75rem 1rem;
+    position: relative;
+    /* 将按钮左边缘置于父元素中心 */
+    left: 0%;
+    transform: none;
   }
 
   @media screen and (min-width: 768px) {
