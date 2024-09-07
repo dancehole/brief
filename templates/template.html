@@ -324,7 +324,9 @@
 
       <!--版权信息-->
       <p class="footer__copy">
-        &copy; <b>{{ footer.copyright }}</b><br>
+        <a class="footer__copy" href="https://beian.miit.gov.cn/" target="_blank">{{ footer.beian }}</a>
+        <br>
+        Copyright &copy; <b>{{ footer.copyright }} . All rights reserved</b><br>
         致谢:
         {% for credit in footer.credits %}
         <a class="footer__copy" href="{{ credit.url }}" target="_blank">{{ credit.name }}</a>{% if not loop.last %}, {%
