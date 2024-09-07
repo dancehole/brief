@@ -1,5 +1,5 @@
 {
-  "title": "邓仕昊的简历",
+  "title": "邓仕昊",
   "ico":"./assets/img/favicon.ico",
   "header": {
     "navLeft": [
@@ -58,7 +58,7 @@
     "personal_info": {
       "title": "Hi, 我是邓仕昊",
       "nickname": "@dancehole",
-      "description": "深技大在逃大学生（实习版）这是一份个人简历，欢迎前来了解我的作品，我们一起为开源贡献出力。商务合作请邮箱联系👇<br>(左侧为社交链接)"
+      "description": "深技大在逃大学生（备考版）这是一份个人简历，欢迎前来了解我的作品，我们一起为开源贡献出力。商务合作请邮箱联系👇<br>(左侧为社交链接)"
     },
     "cta_button": {
       "text": "Contact Me",
@@ -74,7 +74,7 @@
     "about_subtitle": "关于我",
     "about_image": "assets/img/3.jpg",
     "about_description": [
-      "&emsp;&emsp;我是邓仕昊，深圳技术大学大数据与互联网学院大三在读，目前正在嘉为实习 & 备考中。",
+      "&emsp;&emsp;我是邓仕昊，深圳技术大学大数据与互联网学院大三在读，目前正在备考中。",
       "&emsp;&emsp;因计算机相关知识感兴趣在课内外学习了前端开发、(基于python的)后端开发、网络与运维(Saas)、嵌入式(软件开发)、fpga开发、3D打印与机械结构、开源鸿蒙操作系统等领域的相关知识。",
       "&emsp;&emsp;主要作品包含专利证书、校内外奖项、个人与团队的项目成果多件。目前在实习空余时间钻研计算机软件系统，输出系统性博客与文章，偶尔捣鼓一些web和嵌入式小项目等。"
     ],
@@ -324,6 +324,7 @@
       }
     ],
     "copyright": "dancehole.cn",
+    "beian":"粤ICP备2024302719号",
     "credits": [
       {
         "name": "ASOUTHERNCAT",
