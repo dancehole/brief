@@ -1058,8 +1058,12 @@ img {
     .about__container {
       column-gap: 5rem;
     }
-    .about__img {
+    /* .about__img {
+      因调整分辨率后样式不对，故修改
       width: 350px;
+    } */
+    .about__img {
+      width: auto;
     }
     .about__description {
       text-align: initial;

@@ -58,7 +58,7 @@
     "personal_info": {
       "title": "Hi, 我是邓仕昊",
       "nickname": "@dancehole",
-      "description": "深技大在逃大学生（备考版）这是一份个人简历，欢迎前来了解我的作品，我们一起为开源贡献出力。商务合作请邮箱联系👇<br>(左侧为社交链接)"
+      "description": "深技大在逃大学生。这是一份个人简历，欢迎前来了解我的作品，我们一起为开源贡献出力。感兴趣请邮箱联系👇<br>(戳左侧或底部社交链接)"
     },
     "cta_button": {
       "text": "Contact Me",
@@ -72,9 +72,9 @@
   "about": {
     "about_title": "个人简介",
     "about_subtitle": "关于我",
-    "about_image": "assets/img/3.jpg",
+    "about_image": "assets/img/dsh/photo.png",
     "about_description": [
-      "&emsp;&emsp;我是邓仕昊，深圳技术大学大数据与互联网学院大三在读，目前正在备考中。",
+      "&emsp;&emsp;我是邓仕昊，深圳技术大学大数据与互联网学院大四在读，目前正在春招中。",
       "&emsp;&emsp;因计算机相关知识感兴趣在课内外学习了前端开发、(基于python的)后端开发、网络与运维(Saas)、嵌入式(软件开发)、fpga开发、3D打印与机械结构、开源鸿蒙操作系统等领域的相关知识。",
       "&emsp;&emsp;主要作品包含专利证书、校内外奖项、个人与团队的项目成果多件。目前在实习空余时间钻研计算机软件系统，输出系统性博客与文章，偶尔捣鼓一些web和嵌入式小项目等。"
     ],
@@ -92,7 +92,7 @@
         "name": "校内外比赛奖项"
       }
     ],
-    "resume_link": "assets/pdf/resume.pdf",
+    "resume_link": "assets/pdf/resume-template.pdf",
     "download_resume_text": "下载我的简历"
   },
   "skills": {
@@ -183,11 +183,6 @@
             "title": "深圳技术大学",
             "subtitle": "物联网工程",
             "dates": "2021-2025"
-          },
-          {
-            "title": "深圳大学(目标)",
-            "subtitle": "(奋战考研ing)",
-            "dates": "2025 - 2028"
           }
         ]
       },
