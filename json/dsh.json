@@ -212,26 +212,34 @@
       {
         "image_path": "assets/img/dsh/codelabs.jpg",
         "alt": "CodeLabs项目图片",
-        "title": "CodeLabs",
-        "description": "基于Mkdocs的博客系统，可以复用为工作日志文档、笔记知识库、项目文档等。因其美观实用，简洁且无需后端的优势位列展示栏第一",
-        "link": "https://dancehole.github.io/Codelabs/",
-        "button_text": "项目展示地址"
+        "title": "DanceholeLab 跳动实验室",
+        "description": "【前端项目】<br>基于Mkdocs的博客系统，可以复用为工作日志文档、笔记知识库、项目文档等多个项目。因其美观实用，简洁且无需后端的优势位列展示栏第一",
+        "link": "https://docs.dancehole.cn",
+        "button_text": "立即访问"
       },
       {
         "image_path": "./assets/img/dsh/chess.jpg",
         "alt": "三角网络五子棋项目图片",
         "title": "三角网络五子棋",
-        "description": "数据结构与算法课程设计大作业<br>三角网络五子棋（C++实现），基于easyx图形库",
-        "link": "https://gitee.com/dancehole/chess",
-        "button_text": "源代码地址"
+        "description": "【数据结构与算法课程设计大作业】<br>三角网络五子棋（C++实现：基于easyx图形库；已实现vue前端适配），",
+        "link": "https://dancehole.cn/chess",
+        "button_text": "立即体验"
       },
       {
         "image_path": "./assets/img/dsh/water.gif",
         "alt": "水表图片",
         "title": "基于开源鸿蒙的智能水表",
-        "description": "本作品已经实现了一个智能水表应该有的功能，也就是计水计费然后远程上传。而相比现有的家用智能水表，本作品的最大特点是它具有高度实时性、精确性、同时可以对系统远程控制的功能，非常适合应用于需要高实时性和高精度和稳定性的这个智慧农业场景下那么首先，我们现在进行我们嵌入式系统的一个模块介绍。",
+        "description": "本作品已经实现了一个智能水表应该有的功能，也就是计水计费然后远程上传。而相比现有的家用智能水表，本作品的最大特点是它具有高度实时性、精确性、同时可以对系统远程控制的功能，非常适合应用于需要高实时性和高精度和稳定性的这个智慧农业场景。",
         "link": "https://gitee.com/dancehole/qrs",
         "button_text": "源代码地址"
+      },
+      {
+        "image_path": "./assets/img/dsh/water.gif",
+        "alt": "水表图片",
+        "title": "小游戏合集",
+        "description": "小游戏介绍，具体可访问介绍页：<a href='http://intro.dancehole.cn/chess.html'>http://intro.dancehole.cn/chess.html</a>，游玩小游戏可直接戳按钮",
+        "link": "https://dancehole.cn/minigame/",
+        "button_text": "立即游玩"
       }
     ]
   },
