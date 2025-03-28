@@ -274,7 +274,7 @@
         },
         {
           "text": "Codelabs",
-          "url": "https://dancehole.github.io/Codelabs/"
+          "url": "https://docs.dancehole.cn"
         },
         {
           "text":"个人主页 | 工作台",
@@ -282,7 +282,7 @@
         },
         {
           "text":"项目介绍模板",
-          "url":"https://github.com/dancehole/introTemplate"
+          "url":"https://intro.dancehole.cn"
         }
       ],
       [
@@ -299,7 +299,7 @@
         },
         {
           "text":"五子棋",
-          "url":"https://gitee.com/dancehole/chess"
+          "url":"https://dancehole.cn/chess/"
         }
       ],
       [
@@ -307,8 +307,12 @@
           "text" : "demo示例"
         },
         {
-          "text":"腾讯地图示例",
-          "url":"https://github.com/dancehole/TXMapDemo"
+          "text":"腾讯地图demo",
+          "url":"https://dancehole.github.io/TXMapDemo/"
+        },
+        {
+          "text":"小游戏demo",
+          "url":"https://dancehole.cn/minigame/"
         }
       ]
     ],
