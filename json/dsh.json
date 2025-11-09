@@ -32,7 +32,7 @@
     ]
   },
   "home": {
-    "img": "https://cdn.jsdelivr.net/gh/dancehole/image@main/img/1080x1080.ico",
+    "img": "https://cdn.jsdelivr.net/gh/dancehole/image@main/common/1080x1080.ico",
     "social_links": [
       {
         "name": "Gitee",
@@ -58,7 +58,7 @@
     "personal_info": {
       "title": "Hi, 我是邓仕昊",
       "nickname": "@dancehole",
-      "description": "深技大在逃大学生。这是一份个人简历，欢迎前来了解我的作品，我们一起为开源贡献出力。感兴趣请邮箱联系👇<br>(戳左侧或底部社交链接)"
+      "description": "现任深大声音编辑项目组研究助理，负责inversion相关工作。这是一份个人简历，欢迎前来了解我的作品，我们一起为开源贡献出力。感兴趣请邮箱联系👇<br>(戳左侧或底部社交链接)"
     },
     "cta_button": {
       "text": "Contact Me",
@@ -74,22 +74,22 @@
     "about_subtitle": "关于我",
     "about_image": "assets/img/dsh/photo.png",
     "about_description": [
-      "&emsp;&emsp;我是邓仕昊，深圳技术大学大数据与互联网学院大四在读，目前正在春招中。",
-      "&emsp;&emsp;因计算机相关知识感兴趣在课内外学习了前端开发、(基于python的)后端开发、网络与运维(Saas)、嵌入式(软件开发)、fpga开发、3D打印与机械结构、开源鸿蒙操作系统等领域的相关知识。",
-      "&emsp;&emsp;主要作品包含专利证书、校内外奖项、个人与团队的项目成果多件。目前在实习空余时间钻研计算机软件系统，输出系统性博客与文章，偶尔捣鼓一些web和嵌入式小项目等。"
+      "&emsp;&emsp;我是邓仕昊，深圳技术大学大数据与互联网学院本科毕业，目前正在担任深圳大学应用技术学院研究助理。",
+      "&emsp;&emsp;因计算机相关知识感兴趣在课内外学习了前端开发、(基于python的)后端开发、云计算(Saas)、嵌入式(软件开发)、fpga开发、3D打印与机械设计、开源鸿蒙操作系统、深度学习等领域的相关知识。",
+      "&emsp;&emsp;主要作品包含专利证书、校内外奖项、个人与团队的项目成果多件。目前在大数据实验室进行声音编辑工作。"
     ],
     "experience": [
       {
         "years": "3年+",
-        "name": "前端开发经验"
+        "name": "软件开发经验"
       },
       {
-        "years": "2年+",
-        "name": "服务器运维经验"
+        "years": "4+",
+        "name": "研究与学术成果"
       },
       {
         "years": "20+",
-        "name": "校内外比赛奖项"
+        "name": "各大比赛奖项"
       }
     ],
     "resume_link": "assets/pdf/resume-template.pdf",
@@ -183,6 +183,16 @@
             "title": "深圳技术大学",
             "subtitle": "物联网工程",
             "dates": "2021-2025"
+          },
+          {
+            "title": "南方科技大学",
+            "subtitle": "商学院研究项目组",
+            "dates": "2024年"
+          },
+          {
+            "title": "深圳大学",
+            "subtitle": "研究助理",
+            "dates": "2025年-"
           }
         ]
       },
@@ -192,13 +202,18 @@
         "id": "experience",
         "details": [
           {
+            "title": "机器狗实验室",
+            "subtitle": "嵌入式开发小组",
+            "dates": "2021-2022"
+          },
+          {
             "title": "开放原子创客协会",
             "subtitle": "南向开发部",
             "dates": "2022-2023"
           },
           {
             "title": "嘉为科技有限公司",
-            "subtitle": "前端研发工程师",
+            "subtitle": "研发工程师",
             "dates": "2024.3-2024.7"
           }
         ]
@@ -207,7 +222,7 @@
   },
   "project": {
     "portfolio_title": "我的作品集",
-    "portfolio_subtitle": "开源作品集（个人项目）",
+    "portfolio_subtitle": "开源作品集（个人项目），校企共创项目和更多经历请点击<a href='http://intro.dancehole.cn/dsh.html'>这里</a>",
     "projects": [
       {
         "image_path": "assets/img/dsh/codelabs.jpg",
@@ -229,7 +244,7 @@
         "image_path": "./assets/img/dsh/water.gif",
         "alt": "水表图片",
         "title": "基于开源鸿蒙的智能水表",
-        "description": "本作品已经实现了一个智能水表应该有的功能，也就是计水计费然后远程上传。而相比现有的家用智能水表，本作品的最大特点是它具有高度实时性、精确性、同时可以对系统远程控制的功能，非常适合应用于需要高实时性和高精度和稳定性的这个智慧农业场景。",
+        "description": "本作品为挑战杯获奖成果，主要根据企业需求上完成精确计水计费、实时同步的智能水表。目前获得国家级、省级奖项多项、专利一项已授权，一项已受理；正在进行小试阶段，已获得惠州、揭阳明塑等公司的合作意向与测试需求。2025年，该成果作为深圳技术大学百千万重点项目·智慧农业项目·的子项目完成交付",
         "link": "https://gitee.com/dancehole/qrs",
         "button_text": "源代码地址"
       },
