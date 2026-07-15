@@ -41,7 +41,7 @@
       },
       {
         "name": "GitHub",
-        "url": "http://github.com/dancehole",
+        "url": "https://github.com/dancehole",
         "icon": "uil uil-github-alt"
       },
       {
@@ -58,7 +58,7 @@
     "personal_info": {
       "title": "Hi, 我是邓仕昊",
       "nickname": "@dancehole",
-      "description": "现任深大声音编辑项目组研究助理，负责inversion相关工作。这是一份个人简历，欢迎前来了解我的作品，我们一起为开源贡献出力。感兴趣请邮箱联系👇<br>(戳左侧或底部社交链接)"
+      "description": "计算机科班出身的产品经理，专注于 AI 产品方向。从需求调研到 PRD 落地，从技术方案评估到项目交付——我能跟算法聊扩散模型，也能跟研发聊 Vue/React。欢迎了解我的作品 👇"
     },
     "cta_button": {
       "text": "Contact Me",
@@ -74,22 +74,22 @@
     "about_subtitle": "关于我",
     "about_image": "assets/img/dsh/photo.png",
     "about_description": [
-      "&emsp;&emsp;我是邓仕昊，深圳技术大学大数据与互联网学院本科毕业，目前正在担任深圳大学应用技术学院研究助理。",
-      "&emsp;&emsp;因计算机相关知识感兴趣在课内外学习了前端开发、(基于python的)后端开发、云计算(Saas)、嵌入式(软件开发)、fpga开发、3D打印与机械设计、开源鸿蒙操作系统、深度学习等领域的相关知识。",
-      "&emsp;&emsp;主要作品包含专利证书、校内外奖项、个人与团队的项目成果多件。目前在大数据实验室进行声音编辑工作。"
+      "&emsp;&emsp;我是邓仕昊，深圳技术大学物联网工程专业本科毕业（2025届），目前在深圳大学/深圳技术大学创业园担任科研助理，专注于 AI 声音编辑产品方向。",
+      "&emsp;&emsp;我具备产品与技术复合背景：一方面有需求调研、PRD撰写、Axure原型设计、跨团队协调等产品硬技能；另一方面，计算机科班出身让我能理解扩散模型原理、前端架构（Vue/React）和后端技术栈，与研发团队沟通零障碍。",
+      "&emsp;&emsp;曾在嘉为科技 DevOps 产品线独立负责大客户定制前端开发与需求对接（众邦银行、数字广东、生态环境部），在科守搏科技担任产品助理设计急救调度可视化系统。主导的扩散模型声音编辑产品已交付落地，产出 IEEE ICME 论文 1 篇、发明专利 1 项。"
     ],
     "experience": [
       {
-        "years": "3年+",
-        "name": "软件开发经验"
+        "years": "2段",
+        "name": "产品相关实习"
       },
       {
-        "years": "4+",
-        "name": "研究与学术成果"
+        "years": "1篇",
+        "name": "IEEE ICME 论文"
       },
       {
-        "years": "20+",
-        "name": "各大比赛奖项"
+        "years": "9项",
+        "name": "省国级比赛奖项"
       }
     ],
     "resume_link": "assets/pdf/resume-template.pdf",
@@ -97,68 +97,63 @@
   },
   "skills": {
     "skills_title": "我的技能",
-    "skills_subtitle": "My technical level",
+    "skills_subtitle": "产品 + 技术复合能力",
     "skill_groups": [
       {
-        "title": "编码能力",
-        "subtitle": "全栈开发者/学习者，掌握跨专业多领域知识",
-        "icon": "uil uil-brackets-curly",
+        "title": "产品硬技能",
+        "subtitle": "从需求到交付的全链路产品能力",
+        "icon": "uil uil-lightbulb-alt",
         "skills": [
           {
-            "name": "html5/css3/js",
-            "percentage": "95%",
+            "name": "需求调研与用户访谈",
+            "percentage": "85%",
             "class": "html"
           },
           {
-            "name": "python",
-            "percentage": "80%",
+            "name": "PRD撰写与产品文档",
+            "percentage": "90%",
             "class": "python"
           },
           {
-            "name": "java",
-            "percentage": "70%",
+            "name": "原型设计（Axure/Figma）",
+            "percentage": "80%",
             "class": "java"
           },
           {
-            "name": "C/C++",
-            "percentage": "60%",
+            "name": "产品宣讲与跨部门协调",
+            "percentage": "75%",
             "class": "cpp"
           },
           {
-            "name": "sql",
-            "percentage": "50%",
+            "name": "项目进度管控与交付验收",
+            "percentage": "80%",
             "class": "sql"
-          },
-          {
-            "name": "Verilog",
-            "percentage": "40%",
-            "class": "verilog"
           }
         ]
       },
       {
-        "title": "专业技能",
-        "subtitle": "开发所需的其他soft skills",
+        "title": "技术理解力",
+        "subtitle": "能与研发同频沟通的技术背景",
         "icon": "uil uil-server-network",
         "skills": [
           {
-            "name": "前端框架：Vuejs、React",
-            "percentage": "95%",
+            "name": "Web前端技术栈（Vue/React）",
+            "percentage": "85%",
             "class": "vue"
           },
           {
-            "name": "后端框架：Spring、Gin、Flask、Django",
-            "percentage": "90%",
+            "name": "Python后端（Flask/Django）",
+            "percentage": "70%",
             "class": "backend"
           },
           {
-            "name": "云原生：Linux、Docker",
-            "percentage": "80%",
+            "name": "AI / 扩散模型 / Dify Agent",
+            "percentage": "75%",
             "class": "cloud_native"
           },
           {
-            "name": "开发环境：Git、Postman接口调试",
-            "percentage": "70%",
+            "name": "Git / Postman / 开发工具链",
+            "percentage": "80%",
             "class": "dev_env"
           }
         ]
@@ -175,24 +170,14 @@
         "id": "education",
         "details": [
           {
-            "title": "初中 & 高中",
-            "subtitle": "广州市 - 育才中学",
-            "dates": "2015 - 2021"
-          },
-          {
             "title": "深圳技术大学",
-            "subtitle": "物联网工程",
-            "dates": "2021-2025"
+            "subtitle": "物联网工程（软件方向）- 专业排名 23/159",
+            "dates": "2021.09 - 2025.06"
           },
           {
-            "title": "南方科技大学",
-            "subtitle": "商学院研究项目组",
-            "dates": "2024年"
-          },
-          {
-            "title": "深圳大学",
-            "subtitle": "研究助理",
-            "dates": "2025年-"
+            "title": "深圳大学/深圳技术大学 创业园",
+            "subtitle": "科研助理（AI 声音编辑方向）",
+            "dates": "2025.05 - 2026.05"
           }
         ]
       },
@@ -202,19 +187,14 @@
         "id": "experience",
         "details": [
           {
-            "title": "机器狗实验室",
-            "subtitle": "嵌入式开发小组",
-            "dates": "2021-2022"
-          },
-          {
-            "title": "开放原子创客协会",
-            "subtitle": "南向开发部",
-            "dates": "2022-2023"
-          },
-          {
             "title": "嘉为科技有限公司",
-            "subtitle": "研发工程师",
-            "dates": "2024.3-2024.7"
+            "subtitle": "DevOps 产品线开发（实习）- 需求对接+前端",
+            "dates": "2024.04 - 2024.12"
+          },
+          {
+            "title": "深圳科守搏科技有限公司",
+            "subtitle": "产品助理（实习）- 急救调度可视化",
+            "dates": "2024.02 - 2024.04"
           }
         ]
       }
@@ -222,50 +202,55 @@
   },
   "project": {
     "portfolio_title": "我的作品集",
-    "portfolio_subtitle": "开源作品集（个人项目），校企共创项目和更多经历请点击<a href='http://intro.dancehole.cn/dsh.html'>这里</a>",
+    "portfolio_subtitle": "核心项目与开源作品，完整 PRD 和原型请联系作者👇",
     "projects": [
+      {
+        "image_path": "assets/img/dsh/audio.png",
+        "alt": "AI 声音编辑产品",
+        "title": "基于扩散模型的声音编辑产品",
+        "description": "【科研助理项目 · 2025.06-2026.06】<br>校企合作 AI 产品，负责需求调研（三大声音编辑场景）、20+页 PRD 撰写、Axure 原型设计、Dify Agent 工作流设计。独立完成扩散模型反演（Inversion）研究。产出 IEEE ICME 论文 1 篇、发明专利 1 项，已交付学校落地。",
+        "link": "https://intro.dancehole.cn/static/audio-inversion.html",
+        "button_text": "查看脱敏 PRD & 原型"
+      },
       {
         "image_path": "assets/img/dsh/codelabs.jpg",
         "alt": "CodeLabs项目图片",
         "title": "DanceholeLab 跳动实验室",
-        "description": "【前端项目】<br>基于Mkdocs的博客系统，可以复用为工作日志文档、笔记知识库、项目文档等多个项目。因其美观实用，简洁且无需后端的优势位列展示栏第一",
+        "description": "【个人项目】<br>基于 Mkdocs 的博客/知识库系统，美观实用、无需后端。用于沉淀产品思考、技术笔记和项目文档，展示持续输出能力。",
         "link": "https://docs.dancehole.cn",
         "button_text": "立即访问"
       },
       {
-        "image_path": "./assets/img/dsh/chess.jpg",
-        "alt": "三角网络五子棋项目图片",
-        "title": "三角网络五子棋",
-        "description": "【数据结构与算法课程设计大作业】<br>三角网络五子棋（C++实现：基于easyx图形库；已实现vue前端适配），",
-        "link": "https://dancehole.cn/chess",
-        "button_text": "立即体验"
-      },
-      {
         "image_path": "./assets/img/dsh/water.gif",
-        "alt": "水表图片",
+        "alt": "智能水表",
         "title": "基于开源鸿蒙的智能水表",
-        "description": "本作品为挑战杯获奖成果，主要根据企业需求上完成精确计水计费、实时同步的智能水表。目前获得国家级、省级奖项多项、专利一项已授权，一项已受理；正在进行小试阶段，已获得惠州、揭阳明塑等公司的合作意向与测试需求。2025年，该成果作为深圳技术大学百千万重点项目·智慧农业项目·的子项目完成交付",
-        "link": "https://gitee.com/dancehole/qrs",
+        "description": "【挑战杯获奖成果 · 产品化实践】<br>从企业需求出发完成精确计水计费、实时同步的智能水表。获国家级、省级奖项多项，专利 1 项已授权、1 项已受理。曾作为深圳技术大学百千万重点项目·智慧农业子项目完成交付，获得惠州、揭阳相关企业合作意向。",
+        "link": "https://intro.dancehole.cn/static/watermeter.html",
         "button_text": "源代码地址"
       },
       {
-        "image_path": "./assets/img/dsh/water.gif",
-        "alt": "水表图片",
-        "title": "小游戏合集",
-        "description": "小游戏介绍，具体可访问介绍页：<a href='http://intro.dancehole.cn/chess.html'>http://intro.dancehole.cn/chess.html</a>，游玩小游戏可直接戳按钮",
-        "link": "https://dancehole.cn/minigame/",
-        "button_text": "立即游玩"
+        "image_path": "./assets/img/dsh/chess.jpg",
+        "alt": "三角网络五子棋",
+        "title": "三角网络五子棋",
+        "description": "【数据结构与算法课程设计 · 全栈实践】<br>C++ 实现核心算法 + Vue 前端适配，在线对战体验。体现从算法到产品交付的完整能力链。",
+        "link": "https://intro.dancehole.cn/static/chess.html",
+        "button_text": "立即体验"
       }
     ]
   },
   "contact": {
     "contact_title": "联系我",
-    "contact_subtitle": "心动不如行动~来加我呀",
+    "contact_subtitle": "产品岗位，期待与你交流",
     "contact_info": [
+      {
+        "icon": "uil-phone",
+        "title": "电话/微信",
+        "subtitle": "13392127971"
+      },
       {
         "icon": "uil-github",
         "title": "Github",
-        "subtitle": "www.github.com/dancehole"
+        "subtitle": "github.com/dancehole"
       },
       {
         "icon": "uil-envelope",
@@ -275,74 +260,62 @@
       {
         "icon": "uil-map-marker",
         "title": "Location",
-        "subtitle": "GuangDong , CHN"
+        "subtitle": "广州 / 深圳"
       }
     ]
   },
   "footer": {
     "more_info_title": "更多信息",
-    "more_info_subtitle": "访问更好玩更有趣的东西吧~",
+    "more_info_subtitle": "完整简历 · 产品作品 · 技术沉淀",
     "links": [
       [
         {
-          "text": "前端项目"
+          "text": "产品作品"
         },
         {
-          "text": "Codelabs",
+          "text": "个人作品集（PRD & 原型）",
+          "url": "https://brief.dancehole.cn"
+        },
+        {
+          "text": "Codelabs 技术博客",
           "url": "https://docs.dancehole.cn"
-        },
-        {
-          "text":"个人主页 | 工作台",
-          "url":"https://github.com/dancehole/Home"
-        },
-        {
-          "text":"项目介绍模板",
-          "url":"https://intro.dancehole.cn"
         }
       ],
       [
         {
-          "text": "其他项目"
+          "text": "项目链接"
         },
         {
-          "text":"智能水表",
-          "url":"https://gitee.com/dancehole/qrs"
+          "text": "智能水表（挑战杯成果）",
+          "url": "https://gitee.com/dancehole/qrs"
         },
         {
-          "text":"dailyReportHandler",
-          "url":"https://github.com/dancehole/dailyReportHandler"
-        },
-        {
-          "text":"五子棋",
-          "url":"https://dancehole.cn/chess/"
+          "text": "五子棋（课程设计）",
+          "url": "https://dancehole.cn/chess/"
         }
       ],
       [
         {
-          "text" : "demo示例"
+          "text": "更多"
         },
         {
-          "text":"腾讯地图demo",
-          "url":"https://dancehole.github.io/TXMapDemo/"
+          "text": "GitHub 主页",
+          "url": "https://github.com/dancehole"
         },
         {
-          "text":"小游戏demo",
-          "url":"https://dancehole.cn/minigame/"
+          "text": "演示 Demo",
+          "url": "https://dancehole.cn/minigame/"
         }
       ]
     ],
     "social_media": [
       {
         "icon": "uil uil-github-alt",
-        "url": "http://github.com/dancehole"
+        "url": "https://github.com/dancehole"
       },
       {
-        "icon":"uil uil-gitlab",
-        "url": ""
-      },
-      {
-        "icon":"uil uil-code-branch",
-        "url": ""
+        "icon": "fa fa-globe",
+        "url": "https://brief.dancehole.cn"
       }
     ],
     "copyright": "dancehole.cn",

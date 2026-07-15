@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brief 简历编辑器</title>
+  <link rel="stylesheet" href="assets/css/editor.css" />
+</head>
+
+<body>
+  <header class="app-header">
+    <div>
+      <h1>Brief 简历编辑器</h1>
+      <p>编辑 json 内容，保持现有模板和排版不变。</p>
+    </div>
+    <div class="header-status">
+      <span class="badge" id="backendStatus">检测后台中</span>
+      <span class="badge" id="dirtyStatus">未加载</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <section class="panel stack">
+        <h2>文件</h2>
+        <div class="field">
+          <label for="resumeSelect">选择简历</label>
+          <select id="resumeSelect"></select>
+        </div>
+        <div class="field">
+          <label for="resumeName">文件名</label>
+          <input id="resumeName" type="text" spellcheck="false" placeholder="例如 dsh" />
+        </div>
+        <div class="button-row">
+          <button id="loadBtn" type="button">读取</button>
+          <button class="primary" id="saveBtn" type="button">保存 JSON</button>
+        </div>
+        <div class="button-row">
+          <button id="renderBtn" type="button">生成 HTML</button>
+          <a class="preview-link" id="previewLink" href="dsh/" target="_blank">预览页面</a>
+        </div>
+        <div class="button-row">
+          <button id="openFileBtn" type="button">打开本地 JSON</button>
+          <button id="downloadBtn" type="button">下载 JSON</button>
+        </div>
+        <input id="fileInput" type="file" accept="application/json,.json" hidden />
+        <p class="hint">
+          本地编辑需运行 <code>python admin.py</code>；不运行后台时编辑器改为下载 JSON。<br>
+          部署到 GitHub 后，push JSON 即可自动渲染部署（CI 已配置）。
+        </p>
+        <p class="hint message" id="message"></p>
+      </section>
+
+      <nav class="panel nav-list" id="sectionNav" aria-label="编辑分区"></nav>
+    </aside>
+
+    <section class="workspace">
+      <div class="workspace-toolbar">
+        <div>
+          <h2 id="sectionTitle">基础信息</h2>
+          <p id="sectionHelp">站点标题、图标、顶部导航。</p>
+        </div>
+        <div class="button-row">
+          <button id="syncRawBtn" type="button">同步源码</button>
+          <button class="primary hidden" id="applyRawBtn" type="button">应用源码</button>
+        </div>
+      </div>
+
+      <div class="form-root" id="formRoot"></div>
+
+      <div class="raw-panel hidden" id="rawPanel">
+        <textarea id="rawJson" spellcheck="false"></textarea>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/editor.js"></script>
+</body>
+
+</html>

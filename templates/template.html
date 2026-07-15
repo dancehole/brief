@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/x-icon" href="{{ico}}" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ ico | url(base_path) }}" />
   <!--==================== UNICONS 图标 + font Awesome图标====================-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <!--==================== SWIPER CSS ====================-->
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="{{ base_path }}assets/css/swiper-bundle.min.css" />
 
   <!--==================== CSS ====================-->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="{{ base_path }}assets/css/styles.css" />
   <!-- iconfont font class 方式引用图标 -->
   <!-- <link
       rel="stylesheet"
@@ -27,7 +27,7 @@
   <header class="header scroll-header" id="header">
     <nav class="nav container">
       <!-- {%for item in header.navLeft%} -->
-      <a href="{{item.url}}" class="nav__logo" target="_blank">{{item.name}}</a>
+      <a href="{{ item.url | url(base_path) }}" class="nav__logo" target="_blank">{{item.name}}</a>
       <!-- {%endfor%} -->
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list grid">
@@ -62,18 +62,18 @@
           <div class="home__social">
             {% for link in home.social_links %}
             <a href="{{ link.url }}" target="_blank" class="home__social-icon">
-              <!--假如有uil 则就是图标 否则默认为图片 20x20px-->
-              {% if 'uil' in link.icon %}
-              <i class="uil {{ link.icon }}"></i>
+              <!--uil/fa 开头为图标 class，否则为图片路径 20x20px-->
+              {% if 'uil' in link.icon or link.icon.startswith('fa') %}
+              <i class="{{ link.icon }}"></i>
               {% else %}
-              <img src="{{ link.icon }}">
+              <img src="{{ link.icon | url(base_path) }}">
               {% endif %}
             </a>
             {% endfor %}
           </div>
 
           <div class="home__img">
-            <img class="home__blob" src="{{home.img}}" />
+            <img class="home__blob" src="{{ home.img | url(base_path) }}" />
           </div>
 
           <div class="home__data">
@@ -101,7 +101,7 @@
       <h2 class="section__title">{{ about.about_title }}</h2>
       <span class="section__subtitle">{{ about.about_subtitle }}</span>
       <div class="about__container container grid">
-        <img src="{{ about.about_image }}" alt="about" class="about__img" />
+        <img src="{{ about.about_image | url(base_path) }}" alt="about" class="about__img" />
 
         <div class="about__data">
           <p class="about__description">
@@ -121,7 +121,7 @@
           </div>
           <!--下载附件-->
           <div class="about__buttons">
-            <a download="" href="{{ about.resume_link }}" class="button button--flex" target="_blank">
+            <a download="" href="{{ about.resume_link | url(base_path) }}" class="button button--flex" target="_blank">
               <span>{{ about.download_resume_text }}</span><i class="uil uil-download-alt button__icon"></i>
             </a>
           </div>
@@ -189,7 +189,7 @@
           <!-- 多级列表 -->
           <div class="qualification__sections">
             {% for item in qualification.content %}<!--分类-->
-            <div class="qualification__content 
+            <div class="qualification__content
                 {% if loop.first %} qualification__active{% endif %}" data-content id="{{ item.id }}">
               {% for sub_item in item.details %}<!--分类下的类目 交替排列-->
               <div class="qualification__data">
@@ -235,7 +235,7 @@
           <!-- PORTFOLIO ITEM -->
           <div class="portfolio__content grid swiper-slide">
             <!--建议图片比例：正方形或者竖屏，横屏图片目前适配不充分【目前强制拉伸到1：1 320px，额外的部分可能被裁剪】-->
-            <img src="{{ project.image_path }}" alt="{{ project.alt }}" class="portfolio__img" />
+            <img src="{{ project.image_path | url(base_path) }}" alt="{{ project.alt }}" class="portfolio__img" />
 
             <div class="portfolio__details">
               <h3 class="portfolio__title">{{ project.title }}</h3>
@@ -270,7 +270,7 @@
         <div>
           {% for info in contact.contact_info %}
           <div class="contact__information">
-            <i class="uil {{ info.icon }} contact__icon"></i>
+            <i class="{% if not info.icon.startswith('fa') %}uil {% endif %}{{ info.icon }} contact__icon"></i>
             <div>
               <h3 class="contact__title">{{ info.title }}</h3>
               <span class="contact__subtitle">{{ info.subtitle }}</span>
@@ -315,7 +315,7 @@
             {% if social.icon.startswith('fa') or social.icon.startswith('uil') %}
             <i class="icon footer__social uil {{social.icon}} "></i>
             {% else %}
-            <img class="image" src="{{ social.icon }}" alt="{{ social.icon }} Icon" />
+            <img class="image" src="{{ social.icon | url(base_path) }}" alt="{{ social.icon }} Icon" />
             {% endif %}
           </a>
           {% endfor %}
@@ -341,15 +341,15 @@
     <i class="uil uil-arrow-up scrollup__icon"></i>
   </a>
   <!--==================== SWIPER JS ====================-->
-  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="{{ base_path }}assets/js/swiper-bundle.min.js"></script>
 
   <!-- iconfont JS -->
-  <script src="assets/js/iconfont.js"></script>
+  <script src="{{ base_path }}assets/js/iconfont.js"></script>
   <!-- jquery -->
   <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="assets/js/jquery.i18n.min.js"></script>
+  <script src="{{ base_path }}assets/js/jquery.i18n.min.js"></script>
   <!--==================== MAIN JS ====================-->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ base_path }}assets/js/main.js"></script>
 
 </body>
 

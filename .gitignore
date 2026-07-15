@@ -6,6 +6,13 @@
 
 /refactor-vue/*
 
+# 生成的 HTML 页面（由 render.py / CI 自动生成）
+# 根 index.html 和各简历子目录
+/index.html
+/dsh/
+/cyy/
+/*/index.html
+
 # 日志文件
 logs
 
@@ -20,6 +27,8 @@ logs
 /.cache
 /*.cache
 **/.cache
+__pycache__/
+*.py[cod]
 
 # 测试报告
 coverage/
