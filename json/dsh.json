@@ -205,7 +205,7 @@
     "portfolio_subtitle": "核心项目与开源作品，完整 PRD 和原型请联系作者👇",
     "projects": [
       {
-        "image_path": "assets/img/dsh/audio.png",
+        "image_path": "./assets/img/dsh/audio.png",
         "alt": "AI 声音编辑产品",
         "title": "基于扩散模型的声音编辑产品",
         "description": "【科研助理项目 · 2025.06-2026.06】<br>校企合作 AI 产品，负责需求调研（三大声音编辑场景）、20+页 PRD 撰写、Axure 原型设计、Dify Agent 工作流设计。独立完成扩散模型反演（Inversion）研究。产出 IEEE ICME 论文 1 篇、发明专利 1 项，已交付学校落地。",
@@ -213,7 +213,7 @@
         "button_text": "查看脱敏 PRD & 原型"
       },
       {
-        "image_path": "assets/img/dsh/codelabs.jpg",
+        "image_path": "./assets/img/dsh/codelabs.jpg",
         "alt": "CodeLabs项目图片",
         "title": "DanceholeLab 跳动实验室",
         "description": "【个人项目】<br>基于 Mkdocs 的博客/知识库系统，美观实用、无需后端。用于沉淀产品思考、技术笔记和项目文档，展示持续输出能力。",
