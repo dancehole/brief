@@ -44,6 +44,9 @@ coverage/
 .DS_Store
 *.log
 
+# 虚拟环境
+.venv/
+
 # 其他
 npm-debug.log*
 yarn-debug.log*

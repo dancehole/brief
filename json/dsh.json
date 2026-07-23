@@ -208,15 +208,15 @@
         "image_path": "./assets/img/dsh/audio.png",
         "alt": "AI 声音编辑产品",
         "title": "基于扩散模型的声音编辑产品",
-        "description": "【科研助理项目 · 2025.06-2026.06】<br>校企合作 AI 产品，负责需求调研（三大声音编辑场景）、20+页 PRD 撰写、Axure 原型设计、Dify Agent 工作流设计。独立完成扩散模型反演（Inversion）研究。产出 IEEE ICME 论文 1 篇、发明专利 1 项，已交付学校落地。",
+        "description": "【科研助理项目 · 2025.06-2026.06】<br>校企合作 AI 产品，本人负责需求调研（三大声音编辑场景）、20+页 PRD 撰写、Axure 原型设计、Dify Agent 工作流设计。独立完成扩散模型反演（Inversion）研究。产出 IEEE ICME 论文 1 篇、发明专利 1 项，已交付学校落地。",
         "link": "https://intro.dancehole.cn/static/audio-inversion.html",
-        "button_text": "查看脱敏 PRD & 原型"
+        "button_text": "查看项目详细信息"
       },
       {
         "image_path": "./assets/img/dsh/codelabs.jpg",
         "alt": "CodeLabs项目图片",
         "title": "DanceholeLab 跳动实验室",
-        "description": "【个人项目】<br>基于 Mkdocs 的博客/知识库系统，美观实用、无需后端。用于沉淀产品思考、技术笔记和项目文档，展示持续输出能力。",
+        "description": "【个人项目】<br>基于 Mkdocs 的博客/知识库系统，作为对外展示的知识库，美观实用、无需后端（仅需编译构建一次）。用于沉淀产品思考、技术笔记和项目文档，展示持续输出能力。",
         "link": "https://docs.dancehole.cn",
         "button_text": "立即访问"
       },
@@ -224,17 +224,25 @@
         "image_path": "./assets/img/dsh/water.gif",
         "alt": "智能水表",
         "title": "基于开源鸿蒙的智能水表",
-        "description": "【挑战杯获奖成果 · 产品化实践】<br>从企业需求出发完成精确计水计费、实时同步的智能水表。获国家级、省级奖项多项，专利 1 项已授权、1 项已受理。曾作为深圳技术大学百千万重点项目·智慧农业子项目完成交付，获得惠州、揭阳相关企业合作意向。",
+        "description": "【挑战杯获奖成果 · 产品化实践】<br>本人主导的全流程从零到一项目：从企业需求出发完成精确计水计费、实时同步的智能水表。获国家级、省级奖项多项，专利 1 项已授权。曾作为深圳技术大学百千万重点项目·智慧农业子项目完成交付，获得惠州、揭阳相关企业合作意向。本人负责团队管理、产品迭代、企业推广和部分嵌入式开发和前端开发",
         "link": "https://intro.dancehole.cn/static/watermeter.html",
-        "button_text": "源代码地址"
+        "button_text": "查看项目详细信息"
       },
       {
         "image_path": "./assets/img/dsh/chess.jpg",
         "alt": "三角网络五子棋",
         "title": "三角网络五子棋",
-        "description": "【数据结构与算法课程设计 · 全栈实践】<br>C++ 实现核心算法 + Vue 前端适配，在线对战体验。体现从算法到产品交付的完整能力链。",
+        "description": "【数据结构与算法课程设计 · 全栈实践】<br>C++ 实现核心算法 + Vue 前端适配，在线对战体验。体现从算法到产品交付的完整能力链。本人负责C++核心算法部分，主要完成五子棋博弈树的构建与AB剪枝（对战AI核心）",
         "link": "https://intro.dancehole.cn/static/chess.html",
         "button_text": "立即体验"
+      },
+      {
+        "image_path":"./assets/img/ohos/main.jpg",
+        "alt":"政务云SaaS应用",
+        "title":"基于HarmonyOS NEXT的政务云SaaS应用",
+        "description":"【毕业设计 · 2024.09-2025.06】<br>基于HarmonyOS NEXT开发的政务云SaaS移动端应用，参照《全国一体化政务服务平台移动端建设指南》和《粤省事》规范，以ArkTS + Stage模型构建前端，FastAPI + MySQL 8.0支撑后端，实现统一身份认证（OAuth 2.0）、事项办理（申请/受理/审批/反馈全闭环）、政务资讯推送、电子证照（12种卡证）等核心功能。本人作为独立项目负责人，全权负责：产品调研与竞品分析、PRD需求文档撰写、Axure原型设计、技术选型评估、全栈开发（ArkTS前端+FastAPI后端）及Docker容器化部署交付。",
+        "link":"https://intro.dancehole.cn/static/ark-ts-yue-sheng-shi.html",
+        "button_text":"查看项目详细信息"
       }
     ]
   },
