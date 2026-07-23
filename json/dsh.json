@@ -240,7 +240,7 @@
         "image_path":"./assets/img/ohos/main.jpg",
         "alt":"政务云SaaS应用",
         "title":"基于HarmonyOS NEXT的政务云SaaS应用",
-        "description":"【毕业设计 · 2024.09-2025.06】<br>基于HarmonyOS NEXT开发的政务云SaaS移动端应用，参照《全国一体化政务服务平台移动端建设指南》和《粤省事》规范，以ArkTS + Stage模型构建前端，FastAPI + MySQL 8.0支撑后端，实现统一身份认证（OAuth 2.0）、事项办理（申请/受理/审批/反馈全闭环）、政务资讯推送、电子证照（12种卡证）等核心功能。本人作为独立项目负责人，全权负责：产品调研与竞品分析、PRD需求文档撰写、Axure原型设计、技术选型评估、全栈开发（ArkTS前端+FastAPI后端）及Docker容器化部署交付。",
+        "description":"【毕业设计 · 2024.09-2025.06】<br>基于HarmonyOS NEXT开发的政务云SaaS移动端应用，参照《政务平台移动端建设指南》和《粤省事》规范，以ArkTS + Stage模型构建前端，FastAPI + MySQL 8.0支撑后端。本人作为独立项目负责人，全权负责：产品调研与竞品分析、PRD需求文档撰写、Axure原型设计、技术选型评估、全栈开发（ArkTS前端+FastAPI后端）及Docker容器化部署交付。",
         "link":"https://intro.dancehole.cn/static/ark-ts-yue-sheng-shi.html",
         "button_text":"查看项目详细信息"
       }
